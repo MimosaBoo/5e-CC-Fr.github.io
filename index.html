@@ -1,0 +1,1362 @@
+<html>
+<head>
+<title>SRD 5.1 Fr</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+
+
+
+h1,h2,h3,h4,h5  {font-family: Georgia;}
+body{font-family: "Raleway", sans-serif;}
+
+
+
+
+
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+
+/* Custom Styles */
+.w3-sidebar a:hover {
+  background-color: #ccc;
+}
+
+.w3-sidebar .w3-bar-item {
+  padding: 16px;
+}
+
+.w3-sidebar .w3-dropdown-hover:hover .w3-dropdown-content {
+  display: block;
+}
+
+.w3-main {
+  margin-left: 300px;
+}
+
+.about-section {
+  background-color: #333;
+  color: #fff;
+  padding: 32px;
+}
+
+.section1 {
+  background-color: #f1f1f1;
+  padding: 32px;
+}
+</style>
+</head>
+<body class="w3-white w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+  <br>
+  <h3 class="w3-padding-64 w3-center"><b>5ème édition<br>SRD 5.1 Fr</b></h3>
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <div class="w3-dropdown-hover">
+    <a href="#" class="w3-bar-item w3-button">RACES</a>
+    <div class="w3-dropdown-content w3-bar-block w3-card">
+      <a href="#" class="w3-bar-item w3-button">Submenu 1</a>
+      <a href="#" class="w3-bar-item w3-button">Submenu 2</a>
+      <a href="#" class="w3-bar-item w3-button">Submenu 3</a>
+    </div>
+  </div>
+  <div class="w3-dropdown-hover">
+    <a href="#" class="w3-bar-item w3-button">CLASSES</a>
+    <div class="w3-dropdown-content w3-bar-block w3-card">
+      <a href="#" class="w3-bar-item w3-button">Submenu 1</a>
+      <a href="#" class="w3-bar-item w3-button">Submenu 2</a>
+      <a href="#" class="w3-bar-item w3-button">Submenu 3</a>
+    </div>
+  </div>
+  <!-- Add more dropdown menus here for other sections -->
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SRD 5.1 Fr</span>
+  <a href="javascript:void(0)" class="w3-right w3-button light-grey" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main">
+  <div class="w3-content w3-justify " style="max-width:900px">
+
+
+
+<br>
+<!-- Section "Intro" -->
+<h2 id="bienvenue">Bienvenue sur la version 5.1 en Creative Commons</h2>
+
+
+ <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
+ <p>Ce site, est pour le moment une one page.</p>
+
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+ 
+<!-- Section "Races" -->
+
+  <h4>Races</h4>
+  <h5>Traits Raciaux</h5>
+  <p>La description de chaque race inclut des traits raciaux communs à ses membres. Les entrées suivantes apparaissent parmi les traits de la plupart des races.</p>
+  
+  <h5>Augmentation des Scores d'Attributs</h5>
+  <p>Chaque race augmente un ou plusieurs des scores d'attributs d'un personnage.</p>
+  
+  <h5>Âge</h5>
+  <p>L'entrée d'âge indique l'âge auquel un membre de la race est considéré comme adulte, ainsi que l'espérance de vie de la race. Cette information peut vous aider à décider de l'âge de votre personnage au début du jeu.</p>
+  
+  <h5>Alignement</h5>
+  <p>La plupart des races ont des tendances envers certains alignements, décrites dans cette entrée. Ceux-ci ne sont pas contraignants pour les personnages joueurs, mais réfléchir à la raison pour laquelle votre nain est chaotique, par exemple, en défiance de la société naine loyale, peut vous aider à mieux définir votre personnage.</p>
+  
+  <h5>Taille</h5>
+  <p>Les personnages de la plupart des races sont de taille Moyenne, une catégorie de taille comprenant des créatures mesurant environ de 1,20 à 2,40 mètres de haut. Les membres de quelques races sont de taille Petite (entre 0,60 et 1,20 mètre de haut), ce qui signifie que certaines règles du jeu les affectent différemment. La règle la plus importante est que les personnages de petite taille ont du mal à manier les armes lourdes, comme expliqué dans la section "Équipement".</p>
+  
+  <h5>Vitesse</h5>
+  <p>Votre vitesse détermine la distance que vous pouvez parcourir lors de vos déplacements (Aventures) et de vos combats (Combat).</p>
+  
+  <h5>Langues</h5>
+  <p>En raison de votre race, votre personnage peut parler, lire et écrire certaines langues.</p>
+  
+  <h5>Sous-races</h5>
+  <p>Certaines races ont des sous-races. Les membres d'une sous-race ont les traits de la race principale en plus des traits spécifiés pour leur sous-race. Les relations entre les sous-races varient considérablement d'une race à l'autre et d'un monde à l'autre.</p>
+  
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+ 
+
+
+  <h4>Nain</h4>
+
+  <h5>Traits des Nains</h5>
+  <p>Votre personnage nain possède un ensemble de capacités innées, faisant partie intégrante de la nature naine.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs :</strong> Votre score de Constitution augmente de 2.</li>
+    <li><strong>Âge :</strong> Les nains mûrissent au même rythme que les humains, mais ils sont considérés comme jeunes jusqu'à l'âge de 50 ans. En moyenne, ils vivent environ 350 ans.</li>
+    <li><strong>Alignement :</strong> La plupart des nains sont loyaux, croyant fermement aux bienfaits d'une société bien ordonnée. Ils ont également tendance vers le bien, avec un fort sens de l'équité et la conviction que tout le monde mérite de partager les bienfaits d'un ordre juste.</li>
+    <li><strong>Taille :</strong> Les nains mesurent entre 1,20 et 1,50 mètre de haut et ont un poids moyen d'environ 68 kilogrammes. Ils ont une taille Moyenne.</li>
+    <li><strong>Vitesse :</strong> Votre vitesse de déplacement de base est de 7,6 mètres. Votre vitesse n'est pas réduite lorsque vous portez une armure lourde.</li>
+    <li><strong>Vision dans le Noir :</strong> Habitué à la vie souterraine, vous avez une vision supérieure dans des conditions de faible luminosité et dans l'obscurité. Vous pouvez voir en faible lumière dans un rayon de 18 mètres comme s'il s'agissait d'une lumière vive, et dans l'obscurité comme s'il s'agissait d'une faible lumière. Vous ne pouvez pas distinguer les couleurs dans l'obscurité, seulement les nuances de gris.</li>
+    <li><strong>Résistance Naine :</strong> Vous avez l'avantage aux jets de sauvegarde contre le poison, et vous avez la résistance aux dégâts empoisonnés.</li>
+    <li><strong>Entraînement au Combat Nain :</strong> Vous êtes compétent avec la hache de bataille, la hache à une main, le marteau léger et le marteau de guerre.</li>
+    <li><strong>Maîtrise d'Outils :</strong> Vous maîtrisez les outils d'artisan de votre choix : outils de forgeron, fournitures de brasseur ou outils de maçon.</li>
+    <li><strong>Connaissance des Pierres :</strong> Chaque fois que vous effectuez un test d'Intelligence (Histoire) lié à l'origine des ouvrages en pierre, vous êtes considéré comme compétent dans la compétence Histoire et vous ajoutez deux fois votre bonus de maîtrise au test, au lieu de votre bonus de maîtrise normal.</li>
+    <li><strong>Langues :</strong> Vous pouvez parler, lire et écrire le Commun et le Nain. Le Nain est riche en consonnes dures et en sons gutturaux, et ces caractéristiques se retrouvent dans n'importe quelle autre langue qu'un nain pourrait parler.</li>
+  </ul>
+  
+  <h4>Nain des Collines</h4>
+  <p>En tant que nain des collines, vous avez des sens aiguisés, une intuition profonde et une résilience remarquable.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs :</strong> Votre score de Sagesse augmente de 1.</li>
+    <li><strong>Solidité Naine :</strong> Votre total de points de vie maximum augmente de 1, et il augmente de 1 à chaque fois que vous gagnez un niveau.</li>
+  </ul>
+ 
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+
+
+
+
+ 
+  
+  <!-- Elf -->
+  <h3>Elfe</h3>
+  <h4>Traits Elfes</h4>
+  <p>Votre personnage elfe possède une variété d'aptitudes naturelles, le résultat de milliers d'années de raffinement elfique.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Dextérité augmente de 2.</li>
+    <li><strong>Âge:</strong> Bien que les elfes atteignent leur maturité physique vers le même âge que les humains, la notion elfique d'âge adulte va au-delà de la croissance physique pour englober l'expérience mondaine. Un elfe revendique généralement l'âge adulte et un nom adulte vers l'âge de 100 ans et peut vivre jusqu'à 750 ans.</li>
+    <li><strong>Alignement:</strong> Les elfes aiment la liberté, la variété et l'expression de soi, ils penchent donc fortement vers les aspects les plus doux du chaos. Ils apprécient et protègent la liberté des autres ainsi que la leur, et sont plus souvent bons que mauvais.</li>
+    <li><strong>Taille:</strong> Les elfes mesurent en moyenne entre 1,50 mètre et 1,80 mètre et ont une carrure svelte. Votre taille est Moyenne.</li>
+    <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 9 mètres (30 pieds).</li>
+    <li><strong>Vision dans le Noir:</strong> Habitué aux forêts crépusculaires et au ciel nocturne, vous avez une vision supérieure dans des conditions de faible luminosité. Vous pouvez voir dans une lumière tamisée dans un rayon de 18 mètres (60 pieds) comme si c'était une lumière vive, et dans l'obscurité comme si c'était une lumière tamisée. Vous ne pouvez pas discerner les couleurs dans l'obscurité, seulement des nuances de gris.</li>
+    <li><strong>Sens Aiguisés:</strong> Vous avez une compétence en Perception.</li>
+    <li><strong>Ascendance Féerique:</strong> Vous avez l'avantage aux jets de sauvegarde contre le charme et la magie ne peut pas vous endormir.</li>
+    <li><strong>Transe:</strong> Les elfes n'ont pas besoin de dormir. À la place, ils méditent profondément, restant semi-conscients pendant 4 heures par jour. Pendant la méditation, vous pouvez rêver d'une certaine manière ; ces rêves sont en réalité des exercices mentaux devenus réflexes grâce à des années de pratique. Après vous être reposé de cette manière, vous bénéficiez des mêmes avantages qu'un humain qui a dormi 8 heures.</li>
+    <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et l'Elfique. L'Elfique est fluide, avec des intonations subtiles et une grammaire complexe. La littérature elfique est riche et variée, et leurs chansons et poèmes sont célèbres parmi les autres races. De nombreux bardes apprennent cette langue pour ajouter des ballades elfiques à leur répertoire.</li>
+  </ul>
+  
+  <!-- High Elf -->
+  <h4>Elfe Supérieur</h4>
+  <p>En tant qu'elfe supérieur, vous avez un esprit vif et une maîtrise au moins des bases de la magie.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score d'Intelligence augmente de 1.</li>
+    <li><strong>Entraînement aux Armes Elfiques:</strong> Vous avez la maîtrise des armes suivantes : l'épée longue, l'épée courte, l'arc court et l'arc long.</li>
+    <li><strong>Cantrip:</strong> Vous connaissez un cantrip de votre choix issu de la liste des sorts de magicien. L'Intelligence est votre attribut de lanceur de sorts pour ce sort.</li>
+    <li><strong>Langue Supplémentaire:</strong> Vous pouvez parler, lire et écrire une langue supplémentaire de votre choix.</li>
+  </ul>
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+
+
+
+  <!-- Halfling -->
+  <h3>Halfelin</h3>
+  <h4>Traits des Halfelins</h4>
+  <p>Votre personnage halfelin partage un certain nombre de traits avec tous les autres halfelins.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Dextérité augmente de 2.</li>
+    <li><strong>Âge:</strong> Un halfelin atteint l'âge adulte à 20 ans et vit généralement jusqu'au milieu de son deuxième siècle.</li>
+    <li><strong>Alignement:</strong> La plupart des halfelins sont loyaux bons. En règle générale, ils ont bon cœur, détestent voir les autres souffrir et n'ont aucune tolérance pour l'oppression. Ils sont également très ordonnés et traditionnels, s'appuyant fortement sur le soutien de leur communauté et le confort de leurs anciennes habitudes.</li>
+    <li><strong>Taille:</strong> Les halfelins mesurent en moyenne environ 0,90 mètre et pèsent environ 18 kilogrammes. Votre taille est Petite.</li>
+    <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 7,5 mètres (25 pieds).</li>
+    <li><strong>Chanceux:</strong> Lorsque vous faites un 1 sur le d20 pour un jet d'attaque, un test de compétence ou un jet de sauvegarde, vous pouvez relancer le dé et vous devez utiliser le nouveau résultat.</li>
+    <li><strong>Brave:</strong> Vous avez l'avantage aux jets de sauvegarde contre la condition effrayé.</li>
+    <li><strong>Aptitude Halfelin:</strong> Vous pouvez vous déplacer à travers l'espace de toute créature qui est d'une taille supérieure à la vôtre.</li>
+    <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et le Halfelin. La langue des halfelins n'est pas secrète, mais les halfelins sont réticents à la partager avec les autres. Ils écrivent très peu, ils n'ont donc pas une riche production littéraire. Leur tradition orale, cependant, est très forte. Presque tous les halfelins parlent le Commun pour converser avec les habitants des terres où ils vivent ou à travers lesquelles ils voyagent.</li>
+  </ul>
+  
+  <!-- Lightfoot Halfling -->
+  <h4>Halfelin pied-léger</h4>
+  <p>En tant que halfelin pied-léger, vous pouvez facilement vous cacher sans être remarqué, même en utilisant d'autres personnes comme couverture. Vous avez tendance à être aimable et à bien vous entendre avec les autres.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Charisme augmente de 1.</li>
+    <li><strong>Naturellement Furtif:</strong> Vous pouvez tenter de vous cacher même lorsque vous êtes seulement dissimulé par une créature qui est d'une taille supérieure à la vôtre.</li>
+  </ul>
+</div>
+
+ <hr style="border-top: 3px solid darkred;"> 
+ 
+
+
+
+
+<!-- Section "Draconic Ancestry" -->
+<div class="w3-container w3-padding-large w3-justify w3-content w3-padding-32" style="max-width:900px">
+  <h4>Ascendance Draconique</h4>
+  
+  <!-- Dragonborn -->
+  <h3>Dragonborn</h3>
+  <h4>Traits Dragonborn</h4>
+  <p>Votre ascendance draconique se manifeste à travers une variété de traits que vous partagez avec les autres dragonborn.</p>
+  
+  <ul>
+    <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Force augmente de 2 et votre score de Charisme augmente de 1.</li>
+    <li><strong>Âge:</strong> Les dragonborns jeunes grandissent rapidement. Ils marchent quelques heures seulement après l'éclosion, atteignent la taille et le développement d'un enfant humain de 10 ans vers l'âge de 3 ans, et atteignent l'âge adulte vers 15 ans. Ils vivent jusqu'à environ 80 ans.</li>
+    <li><strong>Alignement:</strong> Les dragonborns ont tendance à prendre des positions extrêmes, en faisant un choix conscient pour l'un ou l'autre camp dans la guerre cosmique entre le bien et le mal. La plupart des dragonborns sont bons, mais ceux qui se rangent du côté du mal peuvent être de terribles méchants.</li>
+    <li><strong>Taille:</strong> Les dragonborns sont plus grands et plus lourds que les humains, mesurant bien plus de 6 pieds de haut et pesant en moyenne près de 250 livres. Votre taille est Moyenne.</li>
+    <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 9 mètres (30 pieds).</li>
+    <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et le Draconique. Le Draconique est considéré comme l'une des langues les plus anciennes et est souvent utilisé dans l'étude de la magie. La langue semble rude pour la plupart des autres créatures et comprend de nombreuses consonnes dures et sifflantes.</li>
+  </ul>
+  
+  <!-- Draconic Ancestry -->
+  <h4>Ascendance Draconique</h4>
+  <p>Vous avez une ascendance draconique. Choisissez un type de dragon dans le tableau des Ascendances Draconiques. Votre souffle et votre résistance aux dégâts sont déterminés par le type de dragon, comme indiqué dans le tableau.</p>
+  
+  <table class="w3-table-all">
+    <tr>
+      <th>Dragon</th>
+      <th>Noir</th>
+      <th>Bleu</th>
+      <th>Laiton</th>
+      <th>Bronze</th>
+      <th>Cuivre</th>
+      <th>Or</th>
+      <th>Vert</th>
+      <th>Rouge</th>
+      <th>Argent</th>
+      <th>Blanc</th>
+    </tr>
+    <tr>
+      <td>Dégâts</td>
+      <td>Acide</td>
+      <td>Éclair</td>
+      <td>Feu</td>
+      <td>Éclair</td>
+      <td>Acide</td>
+      <td>Feu</td>
+      <td>Poison</td>
+      <td>Feu</td>
+      <td>Froid</td>
+      <td>Froid</td>
+    </tr>
+    <tr>
+      <td>Arme de Souffle</td>
+      <td>5 par ligne de 30 pieds (jet de Dex.)</td>
+      <td>5 par ligne de 30 pieds (jet de Dex.)</td>
+      <td>5 par ligne de 30 pieds (jet de Dex.)</td>
+      <td>5 par ligne de 30 pieds (jet de Dex.)</td>
+      <td>5 par ligne de 30 pieds (jet de Dex.)</td>
+      <td>15 pieds de cône (jet de Dex.)</td>
+      <td>15 pieds de cône (jet de Con.)</td>
+      <td>15 pieds de cône (jet de Dex.)</td>
+      <td>15 pieds de cône (jet de Con.)</td>
+      <td>15 pieds de cône (jet de Con.)</td>
+    </tr>
+  </table>
+  
+  <p><strong>Arme de Souffle:</strong> Vous pouvez utiliser votre action pour expirer une énergie destructive. Votre ascendance draconique détermine la taille, la forme et le type de dégâts de l'exhalation. Lorsque vous utilisez votre arme de souffle, chaque créature dans la zone de l'exhalation doit effectuer un jet de sauvegarde, dont le type est déterminé par votre ascendance draconique. Le DD de ce jet de sauvegarde est égal à 8 + votre modificateur de Constitution + votre bonus de maîtrise. Une créature subit 2d6 dégâts en cas d'échec du jet de sauvegarde, et la moitié de ces dégâts en cas de réussite. Les dégâts augmentent à 3d6 au niveau 6, 4d6 au niveau 11 et 5d6 au niveau 16.</p>
+  <p>Après avoir utilisé votre arme de souffle, vous ne pouvez pas l'utiliser à nouveau avant d'avoir effectué un court repos ou un long repos.</p>
+  <p><strong>Résistance aux Dégâts:</strong> Vous avez la résistance au type de dégâts associé à votre ascendance draconique.</p>
+
+
+
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+<!-- Gnome -->
+<h3>Gnome</h3>
+<h4>Traits des Gnomes</h4>
+<p>Votre personnage gnome possède certaines caractéristiques communes à tous les autres gnomes.</p>
+
+<ul>
+  <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score d'Intelligence augmente de 2.</li>
+  <li><strong>Âge:</strong> Les gnomes atteignent leur maturité au même rythme que les humains, et la plupart sont censés s'établir dans une vie adulte vers l'âge de 40 ans. Ils peuvent vivre de 350 à près de 500 ans.</li>
+  <li><strong>Alignement:</strong> Les gnomes sont le plus souvent bons. Ceux qui penchent vers la loi sont des sages, des ingénieurs, des chercheurs, des érudits, des enquêteurs ou des inventeurs. Ceux qui penchent vers le chaos sont des ménestrels, des farceurs, des vagabonds ou des joailliers fantasques. Les gnomes sont de bonne nature, et même les farceurs parmi eux sont plus joueurs que vicieux.</li>
+  <li><strong>Taille:</strong> Les gnomes mesurent entre 3 et 4 pieds de haut et pèsent en moyenne environ 40 livres. Vous êtes de taille Petite.</li>
+  <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 7,5 mètres (25 pieds).</li>
+  <li><strong>Vision dans le Noir:</strong> Habitué à la vie souterraine, vous avez une vision supérieure dans des conditions de faible luminosité et dans l'obscurité. Vous pouvez voir dans une lumière faible jusqu'à 18 mètres de vous comme s'il s'agissait d'une lumière vive, et dans l'obscurité comme s'il s'agissait d'une lumière faible. Vous ne pouvez pas distinguer les couleurs dans l'obscurité, seulement des nuances de gris.</li>
+  <li><strong>Ingéniosité des Gnomes:</strong> Vous avez un avantage à tous les jets de sauvegarde d'Intelligence, de Sagesse et de Charisme contre la magie.</li>
+  <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et le Gnomique. La langue gnomique, qui utilise l'écriture naine, est renommée pour ses traités techniques et ses catalogues de connaissances sur le monde naturel.</li>
+</ul>
+
+<!-- Rock Gnome -->
+<h4>Gnome des Rochers</h4>
+<p>En tant que gnome des rochers, vous avez une inventivité naturelle et une robustesse qui dépassent celles des autres gnomes.</p>
+
+<ul>
+  <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Constitution augmente de 1.</li>
+  <li><strong>Savoir de l'Artificier:</strong> Chaque fois que vous effectuez un test d'Intelligence (Histoire) lié aux objets magiques, aux objets alchimiques ou aux appareils technologiques, vous pouvez ajouter deux fois votre bonus de maîtrise, au lieu de tout bonus de maîtrise que vous appliquez normalement.</li>
+  <li><strong>Bricoleur:</strong> Vous êtes compétent avec les outils d'artisanat (outils de bricoleur). En utilisant ces outils, vous pouvez passer 1 heure et 10 po de matériaux pour construire un petit dispositif mécanique (CA 5, 1 point de vie). Le dispositif cesse de fonctionner après 24 heures (sauf si vous passez 1 heure pour le réparer afin de le maintenir en fonctionnement), ou lorsque vous utilisez votre action pour le démonter ; à ce moment-là, vous pouvez récupérer les matériaux utilisés pour le créer. Vous pouvez avoir jusqu'à trois de ces dispositifs actifs à la fois.</li>
+  <li><strong>Lorsque vous créez un dispositif, choisissez l'une des options suivantes :</strong>
+    <ul>
+      <li><strong>Jouet d'Horlogerie:</strong> Ce jouet est un animal, un monstre ou une personne en horlogerie, comme une grenouille, une souris, un oiseau, un dragon ou un soldat. Lorsqu'il est placé sur le sol, le jouet se déplace de 1,5 mètre (5 pieds) à chaque tour dans une direction aléatoire. Il émet des bruits correspondant à la créature qu'il représente.</li>
+      <li><strong>Allume-Feu:</strong> Le dispositif produit une flamme miniature que vous pouvez utiliser pour allumer une bougie, une torche ou un feu de camp. L'utilisation du dispositif nécessite votre action.</li>
+      <li><strong>Boîte à Musique:</strong> Lorsqu'elle est ouverte, cette boîte à musique joue une seule chanson à un volume modéré. La boîte cesse de jouer lorsque la chanson est terminée ou lorsque vous la refermez.</li>
+    </ul>
+  </li>
+</ul>
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+
+
+
+<!-- Half-Elf -->
+<h3>Demi-Elfe</h3>
+<h4>Traits des Demi-Elfes</h4>
+<p>Votre personnage demi-elfe possède certaines qualités communes aux elfes et d'autres qui lui sont propres.</p>
+
+<ul>
+  <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Charisme augmente de 2, et deux autres scores d'attributs de votre choix augmentent de 1.</li>
+  <li><strong>Âge:</strong> Les demi-elfes atteignent leur maturité au même rythme que les humains et atteignent l'âge adulte vers l'âge de 20 ans. Ils vivent beaucoup plus longtemps que les humains, dépassant souvent les 180 ans.</li>
+  <li><strong>Alignement:</strong> Les demi-elfes partagent l'inclination chaotique de leur héritage elfique. Ils valorisent à la fois la liberté personnelle et l'expression créative, ne montrant ni amour pour les dirigeants ni désir d'être des suiveurs. Ils se rebellent contre les règles, ressentent du ressentiment envers les demandes des autres et se révèlent parfois peu fiables, ou du moins imprévisibles.</li>
+  <li><strong>Taille:</strong> Les demi-elfes ont à peu près la même taille que les humains, mesurant entre 5 et 6 pieds de haut. Vous êtes de taille Moyenne.</li>
+  <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 9 mètres (30 pieds).</li>
+  <li><strong>Vision dans le Noir:</strong> Grâce à votre sang elfique, vous avez une vision supérieure dans des conditions de faible luminosité et dans l'obscurité. Vous pouvez voir dans une lumière faible jusqu'à 18 mètres de vous comme s'il s'agissait d'une lumière vive, et dans l'obscurité comme s'il s'agissait d'une lumière faible. Vous ne pouvez pas distinguer les couleurs dans l'obscurité, seulement des nuances de gris.</li>
+  <li><strong>Ascendance Féerique:</strong> Vous avez un avantage aux jets de sauvegarde contre le charme et la magie ne peut pas vous endormir.</li>
+  <li><strong>Polyvalence des Compétences:</strong> Vous gagnez une compétence de votre choix.</li>
+  <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun, l'Elfique et une langue supplémentaire de votre choix.</li>
+</ul>
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+<!-- Half-Orc -->
+<h3>Half-Orc</h3>
+<h4>Half-Orc Traits</h4>
+<p>Votre personnage demi-orque possède certaines caractéristiques dérivées de votre ascendance orque.</p>
+
+<ul>
+  <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score de Force augmente de 2, et votre score de Constitution augmente de 1.</li>
+  <li><strong>Âge:</strong> Les demi-orques mûrissent un peu plus rapidement que les humains et atteignent l'âge adulte vers 14 ans. Ils vieillissent visiblement plus vite et ne vivent que rarement plus de 75 ans.</li>
+  <li><strong>Alignement:</strong> Les demi-orques héritent d'une tendance au chaos de leurs parents orques et ne sont pas fortement enclins au bien. Les demi-orques élevés parmi les orques et prêts à vivre leur vie parmi eux sont généralement mauvais.</li>
+  <li><strong>Taille:</strong> Les demi-orques sont un peu plus grands et plus massifs que les humains, mesurant entre 5 et bien plus de 6 pieds de haut. Vous êtes de taille Moyenne.</li>
+  <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 9 mètres (30 pieds).</li>
+  <li><strong>Vision dans le Noir:</strong> Grâce à votre sang orc, vous avez une vision supérieure dans des conditions de faible luminosité et dans l'obscurité. Vous pouvez voir dans une lumière faible jusqu'à 18 mètres de vous comme s'il s'agissait d'une lumière vive, et dans l'obscurité comme s'il s'agissait d'une lumière faible. Vous ne pouvez pas distinguer les couleurs dans l'obscurité, seulement les nuances de gris.</li>
+  <li><strong>Effrayant:</strong> Vous maîtrisez la compétence d'Intimidation.</li>
+  <li><strong>Endurance Implacable:</strong> Lorsque vous êtes réduit à 0 points de vie mais pas tué sur le coup, vous pouvez tomber à 1 point de vie à la place. Vous ne pouvez pas utiliser à nouveau cette fonctionnalité avant d'avoir terminé un repos long.</li>
+  <li><strong>Attaques Sauvages:</strong> Lorsque vous obtenez un coup critique avec une attaque d'arme de mêlée, vous pouvez relancer l'un des dés de dégâts de l'arme une fois de plus et l'ajouter aux dégâts supplémentaires du coup critique.</li>
+  <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et l'Orc. L'Orc est une langue rude et grinçante avec des consonnes dures. Elle n'a pas son propre système d'écriture, mais elle est écrite dans le script Nain.</li>
+</ul>
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+
+
+
+<!-- Tiefling -->
+<h3>Tiefling</h3>
+<h4>Tiefling Traits</h4>
+<p>Les tieflings partagent certaines caractéristiques raciales en raison de leur ascendance infernale.</p>
+
+<ul>
+  <li><strong>Augmentation des Scores d'Attributs:</strong> Votre score d'Intelligence augmente de 1, et votre score de Charisme augmente de 2.</li>
+  <li><strong>Âge:</strong> Les tieflings mûrissent au même rythme que les humains, mais vivent quelques années de plus.</li>
+  <li><strong>Alignement:</strong> Les tieflings pourraient ne pas avoir une tendance innée vers le mal, mais beaucoup d'entre eux finissent par y arriver. Mauvais ou non, une nature indépendante incline de nombreux tieflings vers un alignement chaotique.</li>
+  <li><strong>Taille:</strong> Les tieflings ont à peu près la même taille et la même constitution que les humains. Vous êtes de taille Moyenne.</li>
+  <li><strong>Vitesse:</strong> Votre vitesse de déplacement de base est de 9 mètres (30 pieds).</li>
+  <li><strong>Vision dans le Noir:</strong> Grâce à votre héritage infernal, vous avez une vision supérieure dans des conditions de faible luminosité et dans l'obscurité. Vous pouvez voir dans une lumière faible jusqu'à 18 mètres de vous comme s'il s'agissait d'une lumière vive, et dans l'obscurité comme s'il s'agissait d'une lumière faible. Vous ne pouvez pas distinguer les couleurs dans l'obscurité, seulement les nuances de gris.</li>
+  <li><strong>Résistance Infernale:</strong> Vous avez une résistance aux dégâts de feu.</li>
+  <li><strong>Héritage Infernal:</strong> Vous connaissez le sort "Thaumaturgie". Lorsque vous atteignez le niveau 3, vous pouvez lancer une fois le sort "Réprimande Infernale" en tant que sort de niveau 2 avec ce trait, et vous retrouvez la capacité de le faire après avoir terminé un repos long. Lorsque vous atteignez le niveau 5, vous pouvez lancer une fois le sort "Ténèbres" avec ce trait, et vous retrouvez la capacité de le faire après avoir terminé un repos long. Le Charisme est votre caractéristique de lanceur de sorts pour ces sorts.</li>
+  <li><strong>Langues:</strong> Vous pouvez parler, lire et écrire le Commun et l'Infernal.</li>
+</ul>
+
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+
+
+
+<!-- Barbare -->
+  <h2>Barbare</h2>
+  <h3>Caractéristiques de classe</h3>
+
+  <h4>Points de vie</h4>
+  <p>Dés de vie : 1d12 par niveau de barbare</p>
+  <p>Points de vie au niveau 1 : 12 + votre modificateur de Constitution</p>
+  <p>Points de vie aux niveaux supérieurs : 1d12 (ou 7) + votre modificateur de Constitution par niveau de barbare après le 1er</p>
+
+  <h4>Maîtrises</h4>
+  <p><strong>Armure :</strong> Armure légère, armure intermédiaire, boucliers</p>
+  <p><strong>Armes :</strong> Armes simples, armes martiales</p>
+  <p><strong>Outils :</strong> Aucun</p>
+  <p><strong>Jets de sauvegarde :</strong> Force, Constitution</p>
+  <p><strong>Compétences :</strong> Choisissez-en deux parmi Dressage d'animaux, Athlétisme, Intimidation, Nature, Perception et Survie</p>
+
+  <h4>Équipement</h4>
+  <p>Vous commencez avec l'équipement suivant, en plus de l'équipement accordé par votre historique :</p>
+  <ul>
+    <li>(a) une grande hache ou (b) une arme de mêlée martiale</li>
+    <li>(a) deux haches de jet ou (b) une arme simple</li>
+    <li>Un sac d'explorateur et quatre javelots</li>
+  </ul>
+
+  <h3>Le Barbare</h3>
+  <table>
+    <tr>
+      <th>Niveau</th>
+      <th>Bonus de maîtrise</th>
+      <th>Caractéristiques</th>
+      <th>Rages</th>
+    </tr>
+    <tr>
+      <td>1er</td>
+      <td>+2</td>
+      <td>Rage, Défense non armée</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2e</td>
+      <td>+2</td>
+      <td>Attaque téméraire, Sens du danger</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3e</td>
+      <td>+2</td>
+      <td>Voie primordiale</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4e</td>
+      <td>+2</td>
+      <td>Amélioration de caractéristique</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>5e</td>
+      <td>+3</td>
+      <td>Attaque supplémentaire, Déplacement rapide</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>6e</td>
+      <td>+3</td>
+      <td>Caractéristique de voie</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>7e</td>
+      <td>+3</td>
+      <td>Instinct sauvage</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>8e</td>
+      <td>+3</td>
+      <td>Amélioration de caractéristique</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>9e</td>
+      <td>+4</td>
+      <td>Critique brutal (1 dé)</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>10e</td>
+      <td>+4</td>
+      <td>Caractéristique de voie</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>11e</td>
+      <td>+4</td>
+      <td>Rage implacable</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>12e</td>
+      <td>+4</td>
+      <td>Amélioration de caractéristique</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>13e</td>
+      <td>+5</td>
+      <td>Critique brutal (2 dés)</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>14e</td>
+      <td>+5</td>
+      <td>Caractéristique de voie</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>15e</td>
+      <td>+5</td>
+      <td>Rage persistante</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>16e</td>
+      <td>+5</td>
+      <td>Amélioration de caractéristique</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>17e</td>
+      <td>+6</td>
+      <td>Critique brutal (3 dés)</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>18e</td>
+      <td>+6</td>
+      <td>Puissance indomptable</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>19e</td>
+      <td>+6</td>
+      <td>Amélioration de caractéristique</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>20e</td>
+      <td>+6</td>
+      <td>Champion primordial</td>
+      <td>Sans limite</td>
+    </tr>
+  </table>
+
+  <h4>Rage</h4>
+  <p>En combat, vous combattez avec une férocité primitive. À votre tour, vous pouvez entrer en rage en tant qu'action bonus.</p>
+  <p>Pendant la rage, vous obtenez les avantages suivants si vous ne portez pas d'armure lourde :</p>
+  <ul>
+    <li>Vous avez l'avantage aux jets de Force et aux sauvegardes de Force.</li>
+    <li>Lorsque vous effectuez une attaque avec une arme de mêlée en utilisant votre Force, vous obtenez un bonus au jet de dégâts qui augmente à mesure que vous gagnez des niveaux de barbare, comme indiqué dans la colonne Dégâts de Rage du tableau du Barbare.</li>
+    <li>Vous avez la résistance aux dégâts contondants, perforants et tranchants.</li>
+  </ul>
+  <p>Si vous êtes capable de lancer des sorts, vous ne pouvez pas les lancer ni les maintenir en concentration pendant que vous êtes en rage.</p>
+  <p>Votre rage dure 1 minute. Elle se termine prématurément si vous êtes assommé(e) ou si votre tour se termine et que vous n'avez pas attaqué une créature hostile depuis votre dernier tour ou subi des dégâts depuis lors. Vous pouvez également mettre fin à votre rage en tant qu'action bonus lors de votre tour.</p>
+  <p>Une fois que vous avez utilisé votre rage un nombre de fois indiqué pour votre niveau de barbare dans la colonne Rages du tableau du Barbare, vous devez terminer un repos long avant de pouvoir entrer en rage à nouveau.</p>
+
+  <h4>Défense non armée</h4>
+  <p>Lorsque vous ne portez aucune armure, votre classe d'armure est égale à 10 + votre modificateur de Dextérité + votre modificateur de Constitution. Vous pouvez utiliser un bouclier et bénéficier toujours de cet avantage.</p>
+
+  <h4>Attaque téméraire</h4>
+  <p>À partir du 2e niveau, vous pouvez mettre de côté toute préoccupation pour la défense afin d'attaquer avec une fureur désespérée. Lorsque vous effectuez votre première attaque à votre tour, vous pouvez décider d'attaquer de manière téméraire. Ce faisant, vous avez l'avantage aux jets d'attaque avec des armes de mêlée utilisant votre Force pendant ce tour, mais les jets d'attaque contre vous ont l'avantage jusqu'à votre prochain tour.</p>
+
+  <h4>Sens du danger</h4>
+  <p>Au 2e niveau, vous développez un sens inné pour détecter lorsque les choses environnantes ne sont pas comme elles devraient être, ce qui vous donne un avantage pour esquiver les dangers.</p>
+  <p>Vous avez l'avantage aux jets de sauvegarde de Dextérité contre les effets que vous pouvez voir, tels que les pièges et les sorts. Pour bénéficier de cet avantage, vous ne pouvez pas être aveuglé(e), assourdi(e) ou neutralisé(e).</p>
+
+  <h4>Voie primordiale</h4>
+  <p>Au 3e niveau, vous choisissez une voie qui façonne la nature de votre rage. Choisissez la Voie du Berserker ou la Voie du Guerrier Totem, détaillées à la fin de la description de classe. Votre choix vous accorde des traits aux niveaux 3, 6, 10 et 14.</p>
+
+  <h4>Amélioration de caractéristique</h4>
+  <p>Lorsque vous atteignez le niveau 4, puis de nouveau aux niveaux 8, 12, 16 et 19, vous pouvez augmenter une caractéristique de votre choix de 2, ou vous pouvez augmenter deux caractéristiques de votre choix de 1. Comme d'habitude, vous ne pouvez pas augmenter une caractéristique au-dessus de 20 en utilisant cette fonctionnalité.</p>
+
+  <h4>Attaque supplémentaire</h4>
+  <p>À partir du 5e niveau, vous pouvez attaquer deux fois au lieu d'une seule fois lorsque vous effectuez l'action Attaquer à votre tour.</p>
+
+  <h4>Déplacement rapide</h4>
+  <p>À partir du 5e niveau, votre vitesse augmente de 10 pieds lorsque vous ne portez pas d'armure lourde.</p>
+
+  <h4>Instinct sauvage</h4>
+  <p>Au 7e niveau, vos instincts sont si aiguisés que vous avez l'avantage aux jets d'initiative.</p>
+  <p>De plus, si vous êtes surpris(e) au début d'un combat et que vous n'êtes pas neutralisé(e), vous pouvez agir normalement lors de votre premier tour, mais uniquement si vous entrez en rage avant de faire autre chose ce tour-ci.</p>
+
+  <h4>Critique brutal</h4>
+  <p>À partir du 9e niveau, vous pouvez lancer un dé de dégâts supplémentaire lorsqu'un coup critique est confirmé avec une attaque de mêlée. Celui-ci augmente à deux dés supplémentaires au 13e niveau et à trois dés supplémentaires au 17e niveau.</p>
+
+  <h4>Rage implacable</h4>
+  <p>À partir du 11e niveau, votre rage peut vous permettre de continuer à combattre malgré des blessures graves. Si vous tombez à 0 points de vie alors que vous êtes en rage et que vous ne mourrez pas immédiatement, vous pouvez faire un jet de sauvegarde de Constitution avec un DD de 10. Si vous réussissez, vous tombez à 1 point de vie à la place.</p>
+  <p>À chaque fois que vous utilisez cette fonctionnalité après la première fois, le DD augmente de 5. Lorsque vous terminez un repos court ou long, le DD revient à 10.</p>
+
+  <h4>Rage persistante</h4>
+  <p>À partir du 15e niveau, votre rage est si féroce qu'elle prend fin seulement si vous perdez connaissance ou si vous décidez de l'arrêter.</p>
+
+  <h4>Puissance indomptable</h4>
+  <p>À partir du 18e niveau, si votre total pour un jet de Force est inférieur à votre score de Force, vous pouvez utiliser ce score à la place du total.</p>
+
+  <h4>Champion primordial</h4>
+  <p>Au 20e niveau, vous incarnez la puissance des terres sauvages. Vos scores de Force et de Constitution augmentent de 4. Votre maximum pour ces scores est maintenant de 24.</p>
+
+  <h3>Voie du Berserker</h3>
+  <p>Pour certains barbares, la rage est un moyen d'atteindre un objectif - cet objectif étant la violence. La Voie du Berserker est une voie de fureur sans limite, baignée de sang. Lorsque vous entrez en rage du berserker, vous vous délectez du chaos de la bataille, indifférent(e) à votre propre santé et bien-être.</p>
+
+  <h4>Frénésie</h4>
+  <p>Dès que vous choisissez cette voie au 3e niveau, vous pouvez entrer en frénésie lorsque vous êtes en rage. Si vous le faites, pendant la durée de votre rage, vous pouvez effectuer une attaque avec une arme de mêlée en tant qu'action bonus à chacun de vos tours après celui-ci. Lorsque votre rage se termine, vous subissez un niveau d'épuisement (tel que décrit dans l'appendice PH-A).</p>
+
+  <h4>Rage insensée</h4>
+  <p>À partir du 6e niveau, vous ne pouvez pas être charmé(e) ou effrayé(e) pendant que vous êtes en rage. Si vous êtes charmé(e) ou effrayé(e) lorsque vous entrez en rage, l'effet est suspendu pendant la durée de la rage.</p>
+
+  <h4>Présence intimidante</h4>
+  <p>À partir du 10e niveau, vous pouvez utiliser votre action pour effrayer quelqu'un par votre présence menaçante. Lorsque vous le faites, choisissez une créature que vous pouvez voir dans un rayon de 30 pieds autour de vous. Si la créature peut vous voir ou vous entendre, elle doit réussir un jet de sauvegarde de Sagesse (DD égal à 8 + votre bonus de maîtrise + votre modificateur de Charisme) ou être effrayée de vous jusqu'à la fin de votre prochain tour. Aux tours suivants, vous pouvez utiliser votre action pour prolonger la durée de cet effet sur la créature effrayée jusqu'à la fin de votre prochain tour. Cet effet se termine si la créature termine son tour hors de votre champ de vision ou à plus de 60 pieds de vous. Si la créature réussit son jet de sauvegarde, vous ne pouvez pas utiliser cette fonctionnalité sur cette créature à nouveau avant 24 heures.</p>
+
+  <h4>Contre-attaque</h4>
+  <p>À partir du 14e niveau, lorsque vous subissez des dégâts d'une créature qui se trouve à moins de 5 pieds de vous, vous pouvez utiliser votre réaction pour effectuer une attaque avec une arme de mêlée contre cette créature.</p>
+ 
+
+
+
+
+
+
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    <h1>Le Barde</h1>
+    <h2>Caractéristiques de Classe</h2>
+    
+    <h3>Points de Vie</h3>
+    <p>Dés de Vie : 1d8 par niveau de barde</p>
+    <p>Points de Vie au 1er Niveau : 8 + votre modificateur de Constitution</p>
+    <p>Points de Vie aux Niveaux Supérieurs : 1d8 (ou 5) + votre modificateur de Constitution par niveau de barde après le 1er</p>
+    
+    <h3>Compétences</h3>
+    <p>Armure : Armure légère</p>
+    <p>Armes : Armes simples, arbalètes de poing, épées longues, rapières, épées courtes</p>
+    <p>Outils : Trois instruments de musique de votre choix</p>
+    <p>Jets de sauvegarde : Dextérité, Charisme</p>
+    <p>Compétences : Choisissez-en trois</p>
+    
+    <h3>Équipement</h3>
+    <p>Vous commencez avec l'équipement suivant, en plus de l'équipement accordé par votre historique :</p>
+    <ul>
+        <li>(a) une rapière, (b) une épée longue, ou (c) une arme simple</li>
+        <li>(a) un sac de diplomate ou (b) un sac d'artiste</li>
+        <li>(a) un luth ou (b) tout autre instrument de musique</li>
+        <li>Une armure en cuir et une dague</li>
+    </ul>
+    
+    <h2>Sorts</h2>
+    
+    <h3>Art de la Magie</h3>
+    <p>Vous avez appris à démêler et à remodeler le tissu de la réalité en harmonie avec vos souhaits et votre musique. Vos sorts font partie de votre vaste répertoire, une magie que vous pouvez adapter à différentes situations.</p>
+    
+    <h3>Cantrips</h3>
+    <p>Vous connaissez deux cantrips de votre choix issus de la liste des sorts de barde. Vous apprenez des cantrips de barde supplémentaires de votre choix à des niveaux plus élevés, comme indiqué dans la colonne "Nombre de Cantrips" du tableau du Barde.</p>
+    
+    <h3>Emplacements de Sorts</h3>
+    <p>Le tableau du Barde montre le nombre d'emplacements de sorts dont vous disposez pour lancer vos sorts de 1er niveau et plus. Pour lancer l'un de ces sorts, vous devez dépenser un emplacement du niveau du sort ou supérieur. Vous récupérez tous les emplacements de sorts dépensés lorsque vous terminez un repos long. Par exemple, si vous connaissez le sort de 1er niveau "soins" et que vous avez un emplacement de sort de 1er niveau et un emplacement de sort de 2e niveau disponibles, vous pouvez lancer "soins" en utilisant l'un ou l'autre emplacement.</p>
+    
+    <h3>Sorts Connus de 1er Niveau et Supérieurs</h3>
+    <p>Vous connaissez quatre sorts de 1er niveau de votre choix issus de la liste des sorts de barde. La colonne "Sorts Connus" du tableau du Barde indique quand vous apprenez plus de sorts de barde de votre choix. Chacun de ces sorts doit être d'un niveau pour lequel vous avez des emplacements de sorts, comme indiqué sur le tableau. Par exemple, lorsque vous atteignez le niveau 3 dans cette classe, vous pouvez apprendre un nouveau sort de 1er ou de 2e niveau. De plus, lorsque vous gagnez un niveau dans cette classe, vous pouvez choisir l'un des sorts de barde que vous connaissez et le remplacer par un autre sort de la liste des sorts de barde, qui doit également être d'un niveau pour lequel vous avez des emplacements de sorts.</p>
+    
+    <h3>Capacité de lancement de sorts</h3>
+    <p>Le Charisme est votre capacité de lancement de sorts pour vos sorts de barde. Votre magie provient du cœur et de l'âme que vous investissez dans l'interprétation de votre musique ou de vos discours. Vous utilisez votre Charisme chaque fois qu'un sort fait référence à votre capacité de lancement de sorts. De plus, vous utilisez votre modificateur de Charisme lorsque vous déterminez le DD de sauvegarde pour un sort de barde que vous lancez et lorsque vous effectuez un jet d'attaque avec un sort de barde.</p>
+    
+    <h3>Jet de sauvegarde contre les sorts = 8 + votre bonus de maîtrise + votre modificateur de Charisme</h3>
+    <h3>Modificateur d'attaque des sorts = votre bonus de maîtrise + votre modificateur de Charisme</h3>
+    
+    <h3>Incantation de Rituel</h3>
+    <p>Vous pouvez lancer tout sort de barde que vous connaissez en tant que rituel si ce sort possède l'étiquette "rituel".</p>
+    
+    <h3>Focalisation de l'Incantation</h3>
+    <p>Vous pouvez utiliser un instrument de musique (voir la section "Équipement") en tant que focalisation de l'incantation pour vos sorts de barde.</p>
+    
+    <h3>Source d'Inspiration</h3>
+    <p>Vous pouvez inspirer les autres par des paroles émouvantes ou de la musique. Pour ce faire, vous utilisez une action bonus lors de votre tour pour choisir une créature autre que vous-même, située à moins de 60 pieds de vous et capable de vous entendre. Cette créature gagne un dé d'Inspiration de Barde, un d6. Une fois au cours des 10 prochaines minutes, la créature peut lancer le dé et ajouter le résultat à un test de compétence, un jet d'attaque ou un jet de sauvegarde qu'elle effectue. La créature peut attendre après avoir lancé le d20 avant de décider d'utiliser le dé d'Inspiration de Barde, mais elle doit décider avant que le MJ ne dise si le jet réussit ou échoue. Une fois que le dé d'Inspiration de Barde est lancé, il est perdu. Une créature ne peut avoir qu'un seul dé d'Inspiration de Barde à la fois. Vous pouvez utiliser cette fonctionnalité un nombre de fois égal à votre modificateur de Charisme (avec un minimum d'une utilisation). Vous récupérez toutes les utilisations dépensées lorsque vous terminez un repos long. Votre dé d'Inspiration de Barde change lorsque vous atteignez certains niveaux dans cette classe. Le dé devient un d8 au niveau 5, un d10 au niveau 10 et un d12 au niveau 15.</p>
+    
+    <h3>Homme-à-tout-faire</h3>
+    <p>À partir du 2e niveau, vous pouvez ajouter la moitié de votre bonus de maîtrise, arrondi à l'inférieur, à n'importe quel test de compétence que vous effectuez et qui n'inclut pas déjà votre bonus de maîtrise.</p>
+    
+    <h3>Chanson du Repos</h3>
+    <p>À partir du 2e niveau, vous pouvez utiliser de la musique apaisante ou un discours pour aider à revitaliser vos alliés blessés pendant un repos court. Si vous ou des créatures amicales qui peuvent entendre votre performance récupèrent des points de vie à la fin du repos court en dépensant un ou plusieurs de leurs dés de vie, chacune de ces créatures récupère des points de vie supplémentaires de 1d6. Les points de vie supplémentaires augmentent lorsque vous atteignez certains niveaux dans cette classe : 1d8 au 9e niveau, 1d10 au 13e niveau et 1d12 au 17e niveau.</p>
+    
+    <h3>Collège des Bardes</h3>
+    <p>À partir du 3e niveau, vous vous plongez dans les techniques avancées d'un collège de bardes de votre choix, tel que le Collège de la Connaissance. Votre choix vous accorde des fonctionnalités au 3e niveau, puis de nouveau au 6e et au 14e niveau.</p>
+    
+    <h3>Expertise</h3>
+    <p>À partir du 3e niveau, choisissez deux de vos compétences dans lesquelles vous êtes doué. Votre bonus de maîtrise est doublé pour tous les tests de compétence utilisant l'une ou l'autre de ces compétences choisies. Au 10e niveau, vous pouvez choisir deux compétences supplémentaires pour bénéficier de cet avantage.</p>
+    
+    <h3>Amélioration de Caractéristique</h3>
+    <p>À partir du 4e niveau, puis de nouveau aux 8e, 12e, 16e et 19e niveaux, vous pouvez augmenter l'une de vos caractéristiques de votre choix de 2, ou vous pouvez augmenter deux caractéristiques de votre choix de 1. Vous ne pouvez pas augmenter une caractéristique au-dessus de 20 en utilisant cette fonctionnalité.</p>
+    
+    <h3>Source d'Inspiration</h3>
+    <p>À partir du 5e niveau, votre Source d'Inspiration s'améliore. Le dé d'Inspiration de Barde devient un d8.</p>
+    
+    <h3>Contrechant</h3>
+    <p>À partir du 6e niveau, vous acquérez la capacité d'utiliser des notes de musique ou des mots de pouvoir pour perturber les effets influençant l'esprit. En tant qu'action, vous pouvez entamer une performance qui dure jusqu'à la fin de votre prochain tour. Pendant cette période, vous et toutes les créatures amicales situées dans un rayon de 30 pieds de vous avez l'avantage aux jets de sauvegarde contre l'effroi ou la charme. Une créature doit pouvoir vous entendre pour bénéficier de cet avantage. La performance prend fin prématurément si vous êtes incapacité ou réduit au silence, ou si vous décidez d'y mettre fin volontairement (aucune action requise).</p>
+    
+    <h3>Secrets Magiques</h3>
+    <p>À partir du 10e niveau, vous avez pillé des connaissances magiques provenant d'une large gamme de disciplines. Choisissez deux sorts de n'importe quelle classe, y compris celle-ci. Le sort que vous choisissez doit être d'un niveau que vous pouvez lancer, comme indiqué sur le tableau du Barde, ou un cantrip. Les sorts choisis comptent comme des sorts de barde pour vous et sont inclus dans le nombre indiqué dans la colonne "Sorts Connus" du tableau du Barde. Vous apprenez deux sorts supplémentaires de n'importe quelle classe au 14e niveau, puis de nouveau au 18e niveau.</p>
+    
+    <h3>Inspiration Supérieure</h3>
+    <p>À partir du 20e niveau, lorsque vous lancez l'initiative et que vous n'avez plus d'utilisation d'Inspiration de Barde, vous en récupérez une.</p>
+    
+    <h2>Collège de la Connaissance</h2>
+    
+    <p>Les bardes du Collège de la Connaissance en savent un peu sur la plupart des choses, collectant des bribes de connaissances à partir de sources aussi diverses que les tomes savants et les contes paysans. Que ce soit en chantant des ballades populaires dans les tavernes ou des compositions élaborées dans les cours royales, ces bardes utilisent leurs dons pour captiver les auditoires. Lorsque les applaudissements s'estompent, les membres du public pourraient se retrouver remettant en question tout ce qu'ils tenaient pour vrai, de leur foi dans le clergé du temple local à leur loyauté envers le roi.</p>
+    
+    <h3>Compétences Bonus</h3>
+    <p>Lorsque vous rejoignez le Collège de la Connaissance au 3e niveau, vous gagnez la maîtrise de trois compétences de votre choix.</p>
+    
+    <h3>Paroles Cinglantes</h3>
+    <p>Au 3e niveau également, vous apprenez à utiliser votre esprit pour distraire, confondre et saper la confiance et la compétence des autres. Lorsqu'une créature que vous pouvez voir à moins de 60 pieds de vous effectue un jet d'attaque, un test de compétence ou un jet de dégâts, vous pouvez utiliser votre réaction pour dépenser l'une de vos utilisations d'Inspiration de Barde, en lançant un dé d'Inspiration de Barde et en soustrayant le résultat du dé du jet de la créature. Vous pouvez choisir d'utiliser cette fonctionnalité après que la créature ait effectué son jet, mais avant que le MJ détermine si le jet d'attaque ou le test de compétence réussit ou échoue, ou avant que la créature n'inflige ses dégâts. La créature est immunisée si elle ne peut pas vous entendre ou si elle est immunisée contre le charme.</p>
+    
+    <h3>Secrets Magiques Supplémentaires</h3>
+    <p>À partir du 6e niveau, vous apprenez deux sorts de votre choix provenant de n'importe quelle classe. Le sort que vous choisissez doit être d'un niveau que vous pouvez lancer, comme indiqué sur le tableau du Barde, ou un cantrip. Les sorts choisis comptent comme des sorts de barde pour vous, mais ne sont pas inclus dans le nombre de sorts de barde que vous connaissez.</p>
+    
+    <h3>Compétence Exceptionnelle</h3>
+    <p>À partir du 14e niveau, lorsque vous effectuez un test de compétence, vous pouvez dépenser une utilisation d'Inspiration de Barde. Lancez un dé d'Inspiration de Barde et ajoutez le résultat à votre test de compétence. Vous pouvez choisir de le faire après avoir lancé le dé pour le test de compétence, mais avant que le MJ ne vous dise si vous réussissez ou échouez.</p>
+    
+
+
+
+
+
+
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+  <h1>Clerc</h1>
+  <h2>Caractéristiques de classe</h2>
+  <p>En tant que clerc, vous obtenez les caractéristiques de classe suivantes.</p>
+
+  <h3>Points de vie</h3>
+  <p>Dé de vie : 1d8 par niveau de clerc</p>
+  <p>Points de vie au niveau 1 : 8 + votre modificateur de Constitution</p>
+  <p>Points de vie aux niveaux supérieurs : 1d8 (ou 5) + votre modificateur de Constitution par niveau de clerc après le 1er</p>
+
+  <h3>Maîtrises</h3>
+  <p>Armures : Armure légère, armure intermédiaire, boucliers</p>
+  <p>Armes : Armes simples</p>
+  <p>Outils : Aucun</p>
+  <p>Jets de sauvegarde : Sagesse, Charisme</p>
+  <p>Compétences : Choisissez deux parmi Histoire, Perception, Médecine, Persuasion et Religion</p>
+
+  <h3>Équipement</h3>
+  <p>Vous commencez avec l'équipement suivant, en plus de l'équipement accordé par votre historique :</p>
+  <ul>
+    <li>(a) une masse ou (b) un marteau de guerre (si vous êtes compétent)</li>
+    <li>(a) une cotte de mailles, (b) une armure de cuir ou (c) une armure de mailles (si vous êtes compétent)</li>
+    <li>(a) une arbalète légère et 20 carreaux ou (b) une arme simple quelconque</li>
+    <li>(a) une trousse de prêtre ou (b) une trousse d'explorateur</li>
+    <li>Un bouclier et un symbole sacré</li>
+  </ul>
+
+  <h2>Le Clerc</h2>
+  <table>
+    <tr>
+      <th>Niveau</th>
+      <th>Bonus</th>
+      <th>Caractéristiques</th>
+      <th>Connus</th>
+      <th>1er</th>
+      <th>2e</th>
+      <th>3e</th>
+      <th>4e</th>
+      <th>5e</th>
+      <th>6e</th>
+      <th>7e</th>
+      <th>8e</th>
+      <th>9e</th>
+    </tr>
+    <tr>
+      <td>1er</td>
+      <td>+2</td>
+      <td>Incantation, Domaine divin</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>2e</td>
+      <td>+2</td>
+      <td>Channelisation divine (1/repos), Caractéristique de domaine</td>
+      <td>3</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>3e</td>
+      <td>+2</td>
+      <td>-</td>
+      <td>3</td>
+      <td>4</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>4e</td>
+      <td>+2</td>
+      <td>Amélioration de caractéristique</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>5e</td>
+      <td>+3</td>
+      <td>Anéantissement des morts-vivants (CR 1/2)</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>6e</td>
+      <td>+3</td>
+      <td>Channelisation divine (2/repos), Caractéristique de domaine</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>7e</td>
+      <td>+3</td>
+      <td>-</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>8e</td>
+      <td>+3</td>
+      <td>Amélioration de caractéristique, Anéantissement des morts-vivants (CR 1), Caractéristique de domaine</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>9e</td>
+      <td>+4</td>
+      <td>-</td>
+      <td>4</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>10e</td>
+      <td>+4</td>
+      <td>Intervention divine</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>11e</td>
+      <td>+4</td>
+      <td>Anéantissement des morts-vivants (CR 2)</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>12e</td>
+      <td>+4</td>
+      <td>Amélioration de caractéristique</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>13e</td>
+      <td>+5</td>
+      <td>-</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>14e</td>
+      <td>+5</td>
+      <td>Anéantissement des morts-vivants (CR 3)</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>15e</td>
+      <td>+5</td>
+      <td>-</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>16e</td>
+      <td>+5</td>
+      <td>Amélioration de caractéristique</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>17e</td>
+      <td>+6</td>
+      <td>Anéantissement des morts-vivants (CR 4), Caractéristique de domaine</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>18e</td>
+      <td>+6</td>
+      <td>Channelisation divine (3/repos)</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19e</td>
+      <td>+6</td>
+      <td>Amélioration de caractéristique</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>20e</td>
+      <td>+6</td>
+      <td>Amélioration de l'intervention divine</td>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </table>
+
+  <h2>Incantation</h2>
+  <p>En tant que conducteur du pouvoir divin, vous pouvez lancer des sorts de clerc.</p>
+
+  <h3>Cantrips</h3>
+  <p>Au 1er niveau, vous connaissez trois cantrips de votre choix issus de la liste des sorts de clerc. Vous apprenez des cantrips de clerc supplémentaires de votre choix à des niveaux supérieurs, comme indiqué dans la colonne "Connus" du tableau du clerc.</p>
+
+  <h3>Préparation et lancement de sorts</h3>
+  <p>Le tableau du clerc montre combien de créneaux de sorts vous avez pour lancer vos sorts du 1er niveau et supérieurs. Pour lancer l'un de ces sorts, vous devez dépenser un créneau de sort de niveau égal ou supérieur. Vous récupérez tous les créneaux de sorts dépensés lorsque vous terminez un repos long.</p>
+  <p>Vous préparez la liste des sorts de clerc qui sont disponibles pour vous lancer, en choisissant parmi la liste des sorts de clerc. Lorsque vous le faites, choisissez un nombre de sorts de clerc égal à votre modificateur de Sagesse + votre niveau de clerc (au minimum un sort). Les sorts doivent être d'un niveau pour lequel vous avez des créneaux de sorts.</p>
+  <p>Par exemple, si vous êtes un clerc de niveau 3, vous disposez de quatre créneaux de sorts de niveau 1 et de deux créneaux de sorts de niveau 2. Avec une Sagesse de 16, votre liste de sorts préparés peut inclure six sorts de niveau 1 ou 2, dans n'importe quelle combinaison. Si vous préparez le sort de niveau 1 "Soins", vous pouvez le lancer en utilisant un créneau de sort de niveau 1 ou 2. Lancer le sort ne le supprime pas de votre liste de sorts préparés.</p>
+  <p>Vous pouvez changer votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de clerc nécessite du temps passé à prier et à méditer : au moins 1 minute par niveau de sort pour chaque sort de votre liste.</p>
+
+  <h3>Capacité de lancement de sorts</h3>
+  <p>La Sagesse est votre capacité de lancement de sorts pour vos sorts de clerc. La puissance de vos sorts provient de votre dévotion envers votre divinité. Vous utilisez votre Sagesse chaque fois qu'un sort de clerc fait référence à votre capacité de lancement de sorts. De plus, vous utilisez votre modificateur de Sagesse lorsque vous fixez la DD de jet de sauvegarde pour un sort de clerc que vous lancez et lorsque vous effectuez un jet d'attaque avec celui-ci.</p>
+  <p>DD de sauvegarde des sorts = 8 + votre bonus de maîtrise + votre modificateur de Sagesse</p>
+  <p>Modificateur d'attaque de sort = votre bonus de maîtrise + votre modificateur de Sagesse</p>
+
+  <h3>Lancement rituel</h3>
+  <p>Vous pouvez lancer un sort de clerc en tant que rituel si ce sort a l'étiquette rituel et que vous avez le sort préparé.</p>
+
+  <h3>Focus de lancement de sorts</h3>
+  <p>Vous pouvez utiliser un symbole sacré (voir "Équipement") en tant que focus de lancement de sorts pour vos sorts de clerc.</p>
+
+  <h2>Domaine divin</h2>
+  <p>Choisissez un domaine lié à votre divinité, tel que la Vie. Chaque domaine est détaillé à la fin de la description de la classe, et chacun d'eux fournit des exemples de dieux qui lui sont associés. Votre choix vous accorde des sorts de domaine et d'autres caractéristiques lorsque vous le choisissez au niveau 1. Il vous accorde également des moyens supplémentaires d'utiliser la Canalisation divine lorsque vous obtenez cette capacité au niveau 2, ainsi que des avantages supplémentaires aux niveaux 6, 8 et 17.</p>
+
+  <h3>Sorts de domaine</h3>
+  <p>Chaque domaine a une liste de sorts - ses sorts de domaine - que vous obtenez aux niveaux de clerc indiqués dans la description du domaine. Une fois que vous obtenez un sort de domaine, vous l'avez toujours préparé et il ne compte pas dans le nombre de sorts que vous pouvez préparer chaque jour. Si vous avez un sort de domaine qui n'apparaît pas dans la liste des sorts de clerc, le sort est néanmoins un sort de clerc pour vous.</p>
+
+  <h3>Canalisation divine</h3>
+  <p>Au niveau 2, vous obtenez la capacité de canaliser directement l'énergie divine de votre divinité pour alimenter des effets magiques. Vous commencez avec deux effets : Restauration partielle et Dommage à distance.</p>
+  <p>Vous choisissez les effets supplémentaires de la liste des effets disponibles pour votre domaine, au niveau 2 et à chaque fois que vous atteignez un niveau de clerc ultérieur, comme indiqué dans la description de votre domaine.</p>
+  <p>Lorsque vous utilisez la Canalisation divine, vous choisissez quel effet utiliser. Vous devez ensuite terminer un repos court ou long pour utiliser la Canalisation divine à nouveau.</p>
+  <p>À partir du niveau 6, lorsque vous utilisez la Canalisation divine, vous pouvez choisir un effet de niveau inférieur à votre niveau de clerc.</p>
+  <p>À partir du niveau 18, lorsque vous utilisez la Canalisation divine, vous pouvez choisir deux effets de niveau inférieur à votre niveau de clerc.</p>
+
+  <h2>Amélioration de caractéristique</h2>
+  <p>Lorsque vous atteignez certains niveaux de clerc, vous pouvez augmenter l'une de vos caractéristiques de votre choix de 2, ou vous pouvez augmenter deux caractéristiques de votre choix de 1. Comme normal, vous ne pouvez pas augmenter une caractéristique au-dessus de 20 en utilisant cette fonctionnalité.</p>
+
+  <h2>Anéantissement des morts-vivants</h2>
+  <p>À partir du niveau 5, lorsque vous lancez un sort de clerc qui inflige des dégâts aux morts-vivants, l'attaque inflige deux fois plus de dégâts aux morts-vivants.</p>
+  <p>De plus, à partir du niveau 8, vous pouvez utiliser votre action pour infliger des dégâts radiants supplémentaires aux morts-vivants touchés par votre Canalisation divine. Le montant de dégâts radiants est égal à votre niveau de clerc.</p>
+
+  <h2>Intervention divine</h2>
+  <p>Au niveau 10, vous pouvez appeler votre divinité à intervenir en votre nom lorsque vous en avez le plus besoin. Si vous échouez à un jet de sauvegarde ou si vous ratez une attaque, vous pouvez utiliser votre réaction pour lancer un dé 2 et ajouter le résultat au jet d'économie ou à l'attaque. Une fois que vous avez utilisé cette fonctionnalité, vous ne pouvez pas l'utiliser à nouveau avant de terminer un repos long.</p>
+
+  <h2>Anéantissement des morts-vivants amélioré</h2>
+  <p>Au niveau 14, votre capacité d'anéantissement des morts-vivants s'améliore. Les dégâts supplémentaires que vous infligez aux morts-vivants avec votre Canalisation divine augmentent à trois fois votre niveau de clerc.</p>
+
+  <h2>Channelisation divine améliorée</h2>
+  <p>Au niveau 20, vous pouvez utiliser votre Canalisation divine à volonté. De plus, le montant de dégâts radiants supplémentaires que vous infligez aux morts-vivants avec votre Canalisation divine est doublé.</p>
+
+
+  <h2>Domaine de la Vie</h2>
+<p>Le domaine de la Vie se concentre sur l'énergie positive vibrante, l'une des forces fondamentales de l'univers, qui soutient toute forme de vie. Les dieux de la vie favorisent la vitalité et la santé en guérissant les malades et les blessés, en prenant soin des nécessiteux et en repoussant les forces de la mort et de la non-vie. Presque n'importe quelle divinité non maléfique peut revendiquer une influence sur ce domaine, en particulier les divinités agricoles (comme Chauntea, Arawai et Déméter), les dieux du soleil (comme Lathander, Pélor et Ré-Horakhty), les dieux de la guérison ou de l'endurance (comme Ilmater, Mishakal, Apollon et Diancecht), ainsi que les dieux du foyer et de la communauté (comme Hestia, Hathor et Boldrei).</p>
+
+<h3>Sorts du domaine de la Vie</h3>
+<p>Niveau de clerc | Sorts</p>
+<p>1er | bénédiction, soins</p>
+<p>3e | restauration partielle, arme spirituelle</p>
+<p>5e | flambeau d'espoir, revivifier</p>
+<p>7e | garde contre la mort, gardien de la foi</p>
+<p>9e | soins en masse, rappel à la vie</p>
+
+<h3>Compétence supplémentaire</h3>
+<p>Lorsque vous choisissez ce domaine au niveau 1, vous obtenez la maîtrise des armures lourdes.</p>
+
+<h3>Disciple de la Vie</h3>
+<p>À partir du niveau 1, vos sorts de guérison sont plus efficaces. Chaque fois que vous utilisez un sort de niveau 1 ou supérieur pour restaurer des points de vie à une créature, celle-ci récupère des points de vie supplémentaires équivalents à 2 + le niveau du sort.</p>
+
+<h3>Canalisation divine : Préservation de la Vie</h3>
+<p>À partir du niveau 2, vous pouvez utiliser votre Canalisation divine pour guérir les blessés. En utilisant votre symbole sacré, vous pouvez invoquer une énergie curative qui peut restaurer un nombre de points de vie égal à cinq fois votre niveau de clerc. Choisissez des créatures se trouvant à moins de 30 pieds de vous et répartissez ces points de vie entre elles. Cette capacité peut restaurer les points de vie d'une créature à un maximum égal à la moitié de ses points de vie maximum. Vous ne pouvez pas utiliser cette capacité sur un mort-vivant ou une créature artificielle.</p>
+
+<h3>Guérisseur béni</h3>
+<p>À partir du niveau 6, les sorts de guérison que vous lancez sur les autres vous guérissent également. Lorsque vous lancez un sort de niveau 1 ou supérieur qui restaure des points de vie à une créature autre que vous, vous récupérez des points de vie équivalents à 2 + le niveau du sort.</p>
+
+<h3>Frappe divine</h3>
+<p>À partir du niveau 8, vous pouvez infuser vos attaques d'armes avec une énergie divine. Une fois pendant chacun de vos tours, lorsque vous touchez une créature avec une attaque d'arme, vous pouvez lui infliger 1d8 points de dégâts radiants supplémentaires. Lorsque vous atteignez le niveau 14, les dégâts supplémentaires augmentent à 2d8.</p>
+
+<h3>Guérison suprême</h3>
+<p>À partir du niveau 17, lorsque vous restaurez des points de vie avec un sort, vous utilisez le nombre le plus élevé possible pour chaque dé. Par exemple, au lieu de restaurer 2d6 points de vie à une créature, vous restaurez 12 points de vie.</p>
+
+
+
+
+
+
+ <hr style="border-top: 3px solid darkred;"> 
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<!--w3-content w3-justify w3-padding-large-->
+
+
+  <!-- About section -->
+
+  <div class="w3-container w3-justify w3-dark-grey w3-center w3-text-light-grey w3-padding-32 about-section" id="about">
+    <h4><b>About Me</b></h4>
+    <div class="w3-content w3-justify" style="max-width:900px">
+      <h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>mail: example@example.com</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- About section -->
+
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 about-section" id="about">
+    <h4><b>About Me</b></h4>
+    <div class="w3-content w3-justify" style="max-width:900px">
+      <h4>My Name</h4>
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+      <p>mail: example@example.com</p>
+    </div>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="w3-container w3-light-grey w3-padding-large w3-justify w3-content w3-justify w3-padding-32 section1" style="max-width:700px">
+    <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+
+  <!-- Add more sections here -->
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+      <h3>INFO</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
