@@ -4,7 +4,7 @@
 
 @media (min-width:320px) {
     .w3-sidebar.w3-collapse{display:none;}
-    .w3-main{margin-left:0!important;margin-right:0!important;}
+    .w3-main{margin-left:0;margin-right:0}
     .w3-auto{max-width:100%!important;}
 }
 
@@ -12,7 +12,7 @@
 
 @media (min-width:641px) {
     .w3-sidebar.w3-collapse{display:none;}
-    .w3-main{margin-left:0!important;margin-right:0!important;}
+    .w3-main{margin-left:0;margin-right:0}
     .w3-auto{max-width:100%;}
 
 
@@ -21,22 +21,25 @@
 
 @media (min-width:961px){
     .w3-sidebar.w3-collapse{display:none;}
-    .w3-main{margin-left:0!important;margin-right:0!important;}
+    .w3-main{margin-left: 300px;}
     .w3-auto{max-width:100%;}
-        footer {margin-left: 300px;}
+    footer {margin-left: 300px;}
 
 }
 
 
 @media (min-width:1280px){
-        .w3-main{margin-left: 300px!important;}
-                footer {margin-left: 300px;}
-
+        .w3-main{margin-left: 300px;}
 }
 
 
 
+
+
+
 /* Custom Styles */
+
+/*
 .w3-sidebar a:hover {
   background-color: #ccc;
 }
@@ -57,3 +60,4 @@
  
 #content {max-width:1200px;}
 
+*/
