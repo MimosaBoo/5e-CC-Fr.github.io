@@ -1,31 +1,69 @@
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="fr">
-<head>
-  <title>SRD 5.1 Fr</title>
+  <title>SRD 5.1 Fr - Races</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-      h1,h2,h3,h4,h5  {font-family: Georgia;}
-      body{font-family: "Raleway", sans-serif;}
-      h4, h3, h1 {color:darkred;}
-      h3 {font-weight: bold}
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <script>
+          // Script to open and close sidebar
+          function w3_open() {
+            document.getElementById("myScrollspy").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+          }
+           
+          function w3_close() {
+            document.getElementById("myScrollspy").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+          }
+
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+          </script>
+
+      <style>
+          h1,h2,h3,h4,h5  {font-family: Georgia;}
+          body{font-family: "Raleway", sans-serif;}
+          h4, h3, h1 {color:darkred;}
+          h3 {font-weight: bold}
+      </style>
 </head>
 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-<body>
+    <nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-center" id="myScrollspy" >
 
-
-<nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
   <br>
      <a href="index.html" class="w3-bar-item w3-button">
        <h3 class="w3-padding-64 w3-center"><b>5e édition<br>SRD 5.1 Fr</b></h3></a>
-     <a href="races.html" class="w3-bar-item w3-button w3-text-teal">Races</a>
+     <a href="races.html" class="w3-bar-item w3-button w3-bold" id="darkred" >-- Races --</a>
+
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#elfe">Elfe</a></li>
+                      <li><a href="#halfelin">Halfelin</a></li>
+                      <li><a href="#humain">Humain</a></li>
+                      <li><a href="#nain">Nain</a></li>
+                      <li><a href="#demi-elfe">Demi-Efle</a></li>
+                      <li><a href="#demi-orc">Demi-Orc</a></li>
+                      <li><a href="#gnome">Gnome</a></li>
+                      <li><a href="#sangdragon">Sangdragon</a></li>
+                      <li><a href="#tieffelin">Tieffelin</a></li>
+                    </ul>
+                   
+               <hr style="border-top: 3px solid darkred;"> 
+
+
      <a href="classes.html" class="w3-bar-item w3-button">Classes</a>
      <a href="progression.html" class="w3-bar-item w3-button">Progression</a>
      <a href="equipements.html" class="w3-bar-item w3-button">Équipements</a>
@@ -49,7 +87,7 @@
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class=".overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
 
@@ -102,7 +140,7 @@
  
   
   <!-- Elf -->
-  <h3>Elfe</h3>
+  <h3 id="elfe">Elfe</h3>
   <h5>Traits Elfes</h5>
   <p>Votre personnage elfe possède une variété d'aptitudes naturelles, le résultat de milliers d'années de raffinement elfique.</p>
   
@@ -152,7 +190,7 @@
 
 
   <!-- Halfelin -->
-  <h3>Halfelin</h3>
+  <h3 id="halfelin">Halfelin</h3>
   <h5>Traits Halfelins</h5>
   <p>Votre personnage halfelin possède un certain nombre de traits commun à tous les autres halfelins.</p>
   
@@ -193,7 +231,7 @@
 
 
   <!-- Humain -->
-  <h3>Humain</h3>
+  <h3 id="humain">Humain</h3>
   <h5>Traits Humains</h5>
 
 <p>Il est difficile de faire des généralisations sur les humains, mais votre personnage humain présente ces caractéristiques.</p>
@@ -219,7 +257,7 @@
 
 
 
-  <h3>Nain</h3>
+  <h3 id="nain">Nain</h3>
 
   <h5>Traits Nains</h5>
   <p>Votre personnage nain possède un ensemble de capacités innées, faisant partie intégrante de la nature naine.</p>
@@ -269,7 +307,7 @@
 
 
 <!-- Demi-Elf -->
-<h3>Demi-Elfe</h3>
+<h3 id="demi-elfe">Demi-Elfe</h3>
 <h5>Traits Demi-Elfes</h5>
 <p>Votre personnage demi-elfe possède certaines qualités communes aux elfes et d'autres qui lui sont propres.</p>
 
@@ -292,7 +330,7 @@
 
 
 <!-- Demi-Orc -->
-<h3>Demi-Orc</h3>
+<h3 id="demi-orc">Demi-Orc</h3>
 <h5>Traits Demi-Orc </h5>
 <p>Votre personnage demi-orque possède certaines caractéristiques dérivées de votre ascendance orque.</p>
 
@@ -314,7 +352,7 @@
 
 
 <!-- Gnome -->
-<h3>Gnome</h3>
+<h3 id="gnome">Gnome</h3>
 <h5>Traits Gnomes</h5>
 <p>Votre personnage gnome possède certaines caractéristiques communes à tous les autres gnomes.</p>
 
@@ -362,7 +400,7 @@
  
   
   <!-- Sangdragon -->
-  <h3>Sangdragon</h3>
+  <h3 id="sangdragon">Sangdragon</h3>
   <h5>Traits Sangdragons</h5>
   <p>Votre héritage draconique se manifeste à travers une variété de traits que vous partagez avec les autres sangdragons.</p>
   
@@ -493,7 +531,7 @@
 
 
 <!-- tieffelin -->
-<h3>Tieffelin</h3>
+<h3 id="tieffelin">Tieffelin</h3>
 <h5>Traits Tieffelins</h5>
 <p>Les tieffelins partagent certaines caractéristiques raciales en raison de leur ascendance infernale.</p>
 
@@ -512,7 +550,18 @@
 
  <hr style="border-top: 5px solid darkred;"> 
 
+
+
+
+
+
+<div class="w3-clear w3-center nextprev">
+<a class="w3-left w3-btn" href="index.html">❮<span class="w3-hide-small"> Index</span></a>
+<a class="w3-btn" href="races.html"><span class="w3-hide-small">Races </span></a>
+<a class="w3-right w3-btn" href="classes.html"><span class="w3-hide-small">Classes </span>❯</a>
+  
     </div>
+</div>
   </div>
 </body>
 
@@ -521,20 +570,17 @@
 
 
   <!-- Footer -->
-  <footer>  
-          <div class="w3-container w3-padding-32 w3-grey">  
-
+  <footer class="w3-grey">  
+          <div class="w3-container w3-padding-large w3-justify w3-content w3-padding-3 ">  
        <div class="w3-row-padding">
 
 <h3>Bienvenue sur la version 5.1 en Creative Commons</h3>
 
  <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
-
-<p>
-Travail basé sur la primière traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab</a>
-</p>
-
- <p>Ce site, est en cours de relecture ... </p>
+<p>Travail basé sur la première traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab.</a></p>
+<p>Je suis Mimosa. <a href="https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/">Voici le lien vers le github de ce site,</a>
+et vous pouvez me contacter sur <a  href="https://www.instagram.com/mimosa_boo/">instagram.</a></p>
+ <p>Cette page est, normalement, terminée </p>
       </p>
 
        </div>
@@ -544,27 +590,6 @@ Travail basé sur la primière traduction par Jean-Baptiste BOURGOIN disponible 
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 
 </html>
