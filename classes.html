@@ -1,32 +1,74 @@
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="fr">
-<head>
-  <title>SRD 5.1 Fr</title>
+  <title>SRD 5.1 Fr - Classes</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <style>
-      h1,h2,h3,h4,h5  {font-family: Georgia;}
-      body{font-family: "Raleway", sans-serif;}
-      h4, h3, h1 {color:darkred;}
-      h3 {font-weight: bold}
-  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          <script>
+          // Script to open and close sidebar
+          function w3_open() {
+            document.getElementById("myScrollspy").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+          }
+           
+          function w3_close() {
+            document.getElementById("myScrollspy").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+          }
+
+          // Modal Image Gallery
+          function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+          }
+          </script>
+
+      <style>
+          h1,h2,h3,h4,h5  {font-family: Georgia;}
+          body{font-family: "Raleway", sans-serif;}
+          h4, h3, h1 {color:darkred;}
+          h3 {font-weight: bold}
+      </style>
 </head>
 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
-<body>
+    <nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-center" id="myScrollspy" >
 
-
-<nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
   <br>
      <a href="index.html" class="w3-bar-item w3-button">
        <h3 class="w3-padding-64 w3-center"><b>5e édition<br>SRD 5.1 Fr</b></h3></a>
      <a href="races.html" class="w3-bar-item w3-button">Races</a>
-     <a href="classes.html" class="w3-bar-item w3-button w3-text-teal">Classes</a>
+     <hr style="border-top: 3px solid darkred;"> 
+
+     <a href="classes.html" class="w3-bar-item w3-button w3-bold" id="darkred">-- Classes --</a>
+
+               
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class="active"><a href="#barbare">Barbare</a></li>
+                      <li><a href="#barde">Barde</a></li>
+                      <li><a href="#clerc">Clerc</a></li>
+                      <li><a href="#druide">Druide</a></li>
+                      <li><a href="#guerrier">Guerrier</a></li>
+                      <li><a href="#moine">Moine</a></li>
+                      <li><a href="#paladin">Paladin</a></li>
+                      <li><a href="#rôdeur">Rôdeur</a></li>
+                      <li><a href="#roublard">Roublard</a></li>
+                      <li><a href="#sorcier">Sorcier</a></li>
+                      <li><a href="#invocateur">Invocateur</a></li>
+                      <li><a href="#magicien">Magicien</a></li>
+                    </ul>
+<hr style="border-top: 3px solid darkred;"> 
+
      <a href="progression.html" class="w3-bar-item w3-button">Progression</a>
      <a href="equipements.html" class="w3-bar-item w3-button">Équipements</a>
      <a href="dons.html" class="w3-bar-item w3-button">Dons</a>
@@ -49,7 +91,7 @@
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class=".overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 
 
@@ -59,18 +101,12 @@
 
 
 <br><br><br>
-<!-- Section "Intro" -->
-<h3>Bienvenue sur la version 5.1 en Creative Commons</h3>
+
+ <hr style="border-top: 5px solid darkred;"> 
 
 
- <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
-
-<p>
-Travail basé sur la primière traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab</a>
-</p>
 
 
- <p>Ce site, est en cours de relecture ... </p>
 
 
  <hr style="border-top: 5px solid darkred;"> 
@@ -8237,33 +8273,33 @@ améliorer les capacités de guérison innées d’une créature pour qu’elle
 se remette rapidement d’une blessure.</p>
 
 
+ <hr style="border-top: 5px solid darkred;"> 
 
 
+
+
+<div class="w3-clear w3-center nextprev">
+<a class="w3-left w3-btn" href="races.html">❮<span class="w3-hide-small"> Races</span></a>
+<a class="w3-btn" href="classes.html"><span class="w3-hide-small">Classes </span></a>
+<a class="w3-right w3-btn" href="progression.html"><span class="w3-hide-small">Progression </span>❯</a>
+  
     </div>
+</div>
   </div>
 </body>
 
-
-
-
-
   <!-- Footer -->
-  <footer>  
-          <div class="w3-container w3-padding-32 w3-grey">  
-
+  <footer class="w3-grey">  
+          <div class="w3-container w3-padding-large w3-justify w3-content w3-padding-3 ">  
        <div class="w3-row-padding">
 
-      <h3>INFO</h3>
+<h3>Bienvenue sur la version 5.1 en Creative Commons</h3>
 
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-
-
-      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-
-        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
+ <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
+<p>Travail basé sur la première traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab.</a></p>
+<p>Je suis Mimosa. <a href="https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/">Voici le lien vers le github de ce site,</a>
+et vous pouvez me contacter sur <a  href="https://www.instagram.com/mimosa_boo/">instagram.</a></p>
+ <p>Cette page est, normalement, terminée </p>
       </p>
 
        </div>
@@ -8273,27 +8309,6 @@ se remette rapidement d’une blessure.</p>
   <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
 
 </div>
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-  document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-  document.getElementById("myOverlay").style.display = "none";
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 
 </html>
