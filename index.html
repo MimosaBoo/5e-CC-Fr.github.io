@@ -1,0 +1,755 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <title>SRD 5.1 Fr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+      h1,h2,h3,h4,h5  {font-family: Georgia;}
+      body{font-family: "Raleway", sans-serif;}
+      h4, h3, h1 {color:darkred;}
+      h3 {font-weight: bold}
+  </style>
+</head>
+
+
+<body>
+
+
+<nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+  <br>
+     <a href="#index.html" class="w3-bar-item w3-button w3-text-teal">
+       <h3 class="w3-padding-64 w3-center"><b>5e édition<br>SRD 5.1 Fr</b></h3></a>
+     <a href="races.html" class="w3-bar-item w3-button">Races</a>
+     <a href="classes.html" class="w3-bar-item w3-button">Classes</a>
+     <a href="progression.html" class="w3-bar-item w3-button">Progression</a>
+     <a href="equipements.html" class="w3-bar-item w3-button">Équipements</a>
+     <a href="dons.html" class="w3-bar-item w3-button">Dons</a>
+     <a href="caracteristiques.html" class="w3-bar-item w3-button">Caractéristique</a>
+     <a href="aventures.html" class="w3-bar-item w3-button">Aventures</a>
+     <a href="combat.html" class="w3-bar-item w3-button">Le combat étape par étape</a>
+     <a href="incantation.html" class="w3-bar-item w3-button">Incantation</a>
+     <a href="objetsmagiques.html" class="w3-bar-item w3-button">Objets magiques</a>
+     <a href="monstres.html" class="w3-bar-item w3-button">Monstres & PNJ</a>
+</nav>
+
+
+
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SRD 5.1 Fr</span>
+  <a href="javascript:void(0)" class="w3-right w3-button light-grey" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+
+<!-- Page content -->
+<div class="w3-main">
+  <div class="w3-container w3-padding-large w3-justify w3-content w3-padding-32" id="content">
+
+
+<br><br><br>
+<!-- Section "Intro" -->
+<h3>Bienvenue sur la version 5.1 en Creative Commons</h3>
+
+
+ <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
+
+<p>
+Travail basé sur la primière traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab</a>
+</p>
+
+
+ <p>Ce site, est en cours de relecture ... </p>
+
+
+ <hr style="border-top: 5px solid darkred;"> 
+
+
+
+
+
+
+
+
+<p>
+  Pages :
+<a href="races.html">- Races </a>
+<a href="class.html">- Classes</a>
+<a href="progression.html">- Progression</a>
+<a href="equipements.html">- Equipements</a>
+<a href="dons.html">- Dons </a>
+<a href="caracteristiques.html">- Caractéristiques</a>
+<a href="aventures.html">- Aventures</a>
+<a href="combat.html">- Combat étape par étape</a>
+<a href="incantation.html">- Incantation</a>
+<a href="objetsmagiques.html">- Objets magiques</a>
+<a href="monstres.html">- Monstres & PNJ</a>
+
+
+</p>
+
+
+<!--
+
+Table des Matières
+
+Races
+Drakonide
+Nain 
+Elfe
+Gnome
+Demi-elfe
+Demi-orque
+Halfelin
+Humain
+Tiefelin
+
+
+
+Classes 13
+Barbare  . . . 13
+Barde  . . . . 17
+Clerc  . . . . 24
+Druide  . . . 30
+Guerrier  . . . 38
+Moine  . . . . 42
+Paladin  . . . 48
+Rôdeur  . . . 57
+Roublard  . . 63
+Sorcier  . . . 68
+Invocateur  . 75
+Magicien  . . 86
+
+
+
+
+
+
+Au-delà du 1er niveau 95
+Avancement du caractère . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95
+
+
+Multiclassage  96
+Prérequis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+Points d’expérience . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Points de vie et dés de réussite . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Bonus de maîtrise supplémentaire . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Maîtrises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Capacités de la classe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Alignement  . 100
+L’alignement dans le multivers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Langues  . . . 102
+Historiques  . 103
+Les composantes d’un historique . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Acolyte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Équipement 107
+Monnaie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+Vente d’un trésor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+Équipement pour l’aventure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 108
+Outils . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Montures et véhicules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118
+Biens commerciaux . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Dépenses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Dépenses liées au mode de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Nourriture, boisson et hébergement . . . . . . . . . . . . . . . . . . . . . . . . . . 122
+Services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Services d’incantation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+Armure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 124
+Lumière Armor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+viii TABLE DES MATIÈRES
+Armure moyenne . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 126
+Armure lourde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+Entrer et sortir d’une armure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127
+Armes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Maîtrise des armes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Propriétés des armes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Dons 133
+Lutteur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Inspiration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Trouver l’inspiration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+Utiliser l’inspiration . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+Utilisation des valeurs de caractéristique 135
+Valeurs de caractéristiques et modificateurs de capacités . . . . . . . . . . . . . . . . . . 135
+Avantage et inconvénient . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 136
+Bonus de maîtrise supplémentaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Jets de caractéristiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Concours . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+Compétences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+Chèques passifs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+Travailler ensemble . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 140
+Utiliser chaque capacité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Force . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Dextérité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Constitution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Intelligence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+Sagesse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Charisme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Jets de sauvegarde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148
+Aventures 149
+Temps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+Mouvement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+Vitesse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 150
+Types de mouvements spéciaux . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+Environnement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+Falling . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+Suffocant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+Vision et lumière . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+Nourriture et eau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+Objets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Briser des objets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Reposez-vous . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+Repos court . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+Repos long . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 156
+Entre deux aventures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+TABLE DES MATIÈRES ix
+Dépenses liées au mode de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+Activités en temps d’arrêt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+États . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+Poisons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162
+Echantillon de poisons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Maladies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+Exemples de maladies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165
+La folie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 166
+Devenir fou . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+Effets de la folie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+Guérir la folie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169
+Pièges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169
+Les pièges en jeu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169
+Pièges à échantillons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172
+Combat 177
+L’ordre de combat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+Surprise . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+Initiative . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Votre tour . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Réactions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+Mouvement et position . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+La rupture de votre déménagement . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Terrain difficile . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Être à terre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Se déplacer autour d’autres créatures . . . . . . . . . . . . . . . . . . . . . . . . . 181
+Mouvement Volant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181
+Taille de la créature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+Actions en combat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Attaque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Lancer un sort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Dash . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Désengager . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Dodge . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+Aide . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+Cacher . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+Prêt . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+Recherche . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Utiliser un objet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Faire une attaque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Jets d’attaque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Attaquants et cibles invisibles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Attaques à distance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Attaques à distance en combat rapproché . . . . . . . . . . . . . . . . . . . . . . . 187
+Attaques de mêlée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+Abri . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 188
+Dégâts et Guérison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+x TABLE DES MATIÈRES
+Points de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+Roulements de dommages . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 189
+Résistance aux dégâts et vulnérabilité . . . . . . . . . . . . . . . . . . . . . . . . . 191
+Guérison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191
+Chute à 0 points de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 191
+Déblocage d’une créature . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+Points de vie temporaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+Combattant monté . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 193
+Montage et démontage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+Contrôle d’un support . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+Combat sous-marin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+Incantation 197
+Qu’est-ce qu’un sort ? . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+Niveau des sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+Sorts connus et préparés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Emplacements de sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Tours de magie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+Rituels . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+Lancer un sort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+Temps de coulée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+Portée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+Composantes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+Durée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+Cibles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+Zones d’effet . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+Jets de sauvegarde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204
+Jets d’attaque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+Combinaison d’effets magiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+Listes de sorts 207
+Sorts de Barde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+Sorts de clercs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 211
+
+
+
+TABLE DES MATIÈRES xi
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 211
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 212
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+Sorts Druides . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 214
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 214
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+Sorts de paladin . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+Sorts du rôdeur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 217
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+Sorts de sorcier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Sorts d’Invocateur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+xii TABLE DES MATIÈRES
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+Sorts de magicien . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+Tours de magie (0 Niveau) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 223
+1er niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 224
+2ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 224
+3ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 225
+4ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226
+5ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226
+6ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+7ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+8ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+9ème niveau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+Descriptions des sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+Objets magiques 399
+Lié . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 399
+Porter et manier des objets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 400
+Plusieurs articles du même type . . . . . . . . . . . . . . . . . . . . . . . . . . . . 400
+Articles appariés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 400
+Activation d’un élément . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 400
+Injonction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Consommables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Charges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Descriptions des objets magiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Armure d’adamantium . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 401
+Munitions, +1, +2, ou +3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+Amulette de santé . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+Amulette d’anti-télédétection et de localisation . . . . . . . . . . . . . . . . . . . . 402
+Amulette des plans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+Bouclier animé . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+Appareils du Crabe . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 402
+Armure, +1, +2, ou +3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 404
+Armure d’invulnérabilité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 404
+Armure de résistance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 404
+Armure de vulnérabilité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 405
+Bouclier pareprojectiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 405
+Flèche ravageuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 405
+Sac de haricots . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 405
+Sac dévoreur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+Sac sans fond . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+Sac à malices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 407
+Perle de force . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
+Ceinturon des nains . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 409
+TABLE DES MATIÈRES xiii
+Ceinturon de force de géant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 410
+Hache du berserker . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 410
+Bottes elfiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 410
+Bottes de lévitation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
+Bottes de rapidité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
+Bottes de sept lieues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
+Bottes des terres gelées . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 411
+Jatte de contrôle des élémentaux de l’eau . . . . . . . . . . . . . . . . . . . . . . . 411
+Bracelets d’archerie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+Bracelets de défense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+Brasero de contrôle des élémentaux de feu . . . . . . . . . . . . . . . . . . . . . . 412
+Broche bouclier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+Balai volant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+Cierge d’invocation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 412
+Cape du prestidigitateur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413
+Tapis volant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 413
+Encensoir de contrôle des élémentaux de l’air . . . . . . . . . . . . . . . . . . . . 414
+Carillon d’ouverture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414
+Diadème de destruction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 414
+Cape d’Aranéide . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+Cape de déplacement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+Cape elfique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+Cape de protection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+Cape de la chauve-souris . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 415
+Cape de la raie manta . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+Boule de cristal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+Cube de force . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 416
+Portail Cube des plans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 417
+Dague venimeuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+Épée dansante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+Carafe intarissable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 418
+Cartes d’illusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 419
+Cartes merveilleuses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 420
+Gardienne . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 423
+Armure démoniaque . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 423
+Menottes dimensionnelles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 423
+Armure d’écailles de dragon . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 423
+Tueuse de dragons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
+Poussière de disparition . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
+Poussière de dessication . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 424
+Poudre à éternuer et à étouffer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+Harnois nain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+Marteau de lancer nain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+Carquois efficace . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 425
+Bouteille de l’éfrit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 426
+Gemme élémentaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 426
+Côte de mailles elfique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+xiv TABLE DES MATIÈRES
+Bouteille fumigène . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+Regard charmeur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+Yeux grossissants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+Yeux d’Aigle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 427
+Jeton Plume . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 428
+Figurine merveilleuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 429
+Épée ardente . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 430
+Bateau pliable . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 431
+Fer gelé . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 431
+Gantelets de puissance d’ogre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 431
+Gemme d’illumination . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432
+Gemme de vision . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432
+Tueuse de géants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432
+Armure de cuir clouté enchantée . . . . . . . . . . . . . . . . . . . . . . . . . . . . 432
+Gants piégeurs de projectiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433
+Gants de nage et d’escalade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433
+Lunettes de nuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433
+Marteau de tonnerre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433
+Sac à dos pratique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 434
+Chapeau de déguisement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 434
+Bandeau d’intelligence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 434
+Heaume scintillant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 435
+Heaume de compréhension des langues . . . . . . . . . . . . . . . . . . . . . . . . 435
+Heaume de télépathie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 435
+Heaume de téléportation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+Vengeresse sacrée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+Cor de dévastation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+Cor du Valhalla . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 436
+Fers de rapidité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+Fers de zéphyr . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+Sceptre inamovible . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+Forteresse instantanée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 437
+Pierre de Ioun . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 438
+Bandes de fer de liaison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 440
+Flasque de fer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 440
+Javeline de foudre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+Lanterne de révélation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+Lame porte-chance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 441
+Masse d’armes d’anéantissement . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+Masse destructrice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+Masse d’armes terrifiante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 442
+Manteau de résistance aux sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+Manuel de vitalité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+Manuel d’exercices physiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+Manuel des golems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 443
+Manuel de vivacité d’action . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+Pigments merveilleux . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+TABLE DES MATIÈRES xv
+Médaillon des pensées . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+Miroir d’emprisonnement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 444
+Armure de mithral . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
+Collier d’adaptation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
+Collier de boules de feu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445
+Collier de perles de prière . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 446
+Voleuse des neuf vies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 446
+Arc du serment . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 446
+Huile éthérée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+Huile d’affûtage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+Huile d’insaisissabilité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+Perle de pouvoir . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 447
+Amulette de santé . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+Amulette antidote contre le poison . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+Amulette de cicatrisation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+Philtre d’amour . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+Flûte obsédante . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 448
+Flûte des égouts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 449
+Armure harnois éthérée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 449
+Puis portatif . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 449
+Potion d’amitié avec les animaux . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+Potion de Clairvoyance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+Potion d’escalade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+Potion de diminution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 450
+Potion de vol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 451
+Potion de forme gazeuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 451
+Potion de force de géant . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 451
+Potion d’agrandissement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 451
+Potion de guérison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 452
+Potion d’héroïsme . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 452
+Potion d’invisibilité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 452
+Potion de lecture des pensées . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 452
+Potion de poison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 452
+Potion de résistance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+Potion de vitesse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+Potion de respiration aquatique . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+Pommade réparatrice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 453
+Anneau d’influence sur les animaux . . . . . . . . . . . . . . . . . . . . . . . . . . 454
+Anneau de convocation de djinn . . . . . . . . . . . . . . . . . . . . . . . . . . . . 454
+Anneau de contrôle des élémentaux . . . . . . . . . . . . . . . . . . . . . . . . . . 454
+Anneau d’esquive totale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau de feuille morte . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau d’action libre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau d’invisibilité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau de saut . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau de barrière mentale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 456
+Anneau de protection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+xvi TABLE DES MATIÈRES
+Anneau de régénération . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+Anneau de résistance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+Anneau de feu d’étoiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 457
+Anneau de stockage de sort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 458
+Anneau de renvoi des sorts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau de nage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau de télékinésie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau de triple souhaits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau ardent . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau de marche sur l’eau . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 459
+Anneau de rayons X . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
+Anneau du bélier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
+Robe panoptique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 460
+Robe prismatique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461
+Robe aux étoiles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461
+Robe de camelot . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 461
+Robe de l’archimage . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 462
+Sceptre d’absorption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 462
+Sceptre de vigilance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 463
+Sceptre de puissance seigneuriale . . . . . . . . . . . . . . . . . . . . . . . . . . . 463
+Sceptre de suzeraineté . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 465
+Sceptre de sécurité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 465
+Corde d’escalade . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 465
+Corde d’enchevêtrement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 466
+Scarabée de protection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 466
+Cimeterre de rapidité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 466
+Bouclier, +1, +2, ou +3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 466
+Bouclier d’attraction des projectiles . . . . . . . . . . . . . . . . . . . . . . . . . . 467
+Chaussures de grimpe aranéide . . . . . . . . . . . . . . . . . . . . . . . . . . . . 467
+Colle universelle . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 467
+Parchemin de sort . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 467
+Bouclier gardes-maléfices . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 468
+Sphère d’annihilation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 468
+Bâton d’envoûtement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 469
+Bâton de feu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 469
+Bâton de givre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 470
+Bâton de guérison . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 470
+Bâton de surpuissance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 470
+Bâton percussif . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 471
+Bâton de grand essaim d’insectes . . . . . . . . . . . . . . . . . . . . . . . . . . . 471
+Bâton de tonnerre et de foudre . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 471
+Bâton de flétrissement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 472
+Bâton du sorcelier . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 472
+Bâton du python . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 473
+Bâton des forêts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 474
+Pierre de contrôle des élémentaux de terre . . . . . . . . . . . . . . . . . . . . . . 474
+Pierre porte-bonheur (Luckstone) . . . . . . . . . . . . . . . . . . . . . . . . . . . 474
+TABLE DES MATIÈRES xvii
+Épée radieuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 474
+Épée voleuse de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 475
+Épée acérée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 475
+Ép Ép Ép Ep épée incuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 475
+Talisman du bien ultime . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 476
+Talisman du mal absolu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 476
+Talisman de la sphère . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 476
+Traité de perspicacité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+Traité d’autorité et d’influence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+Traité de compréhension . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+Trident de commandement des poissons . . . . . . . . . . . . . . . . . . . . . . . 477
+Solvant universel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+Arme vicieuse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 477
+Épée vorpale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 478
+Baguette d’entraves . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 478
+Baguette de détection de l’ennemi . . . . . . . . . . . . . . . . . . . . . . . . . . . 478
+Baguette de peur . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 478
+Baguette de boules de feu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 479
+Baguette d’éclairs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 479
+Baguette de détection de la magie . . . . . . . . . . . . . . . . . . . . . . . . . . . 479
+Baguette de projectiles magiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+Baguette de paralysie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+Baguette de métamorphose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+Baguette des secrets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+Baguette de toile d’araignée . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 480
+Baguette des merveilles . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 481
+Baguette du mage de bataille, +1, +2, ou +3 . . . . . . . . . . . . . . . . . . . . . . 482
+Arme, +1, +2, ou +3 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 482
+Puits des mondes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+Éventail des Brises . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+Bottes ailées . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+Les ailes du vol . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+Objets de Magie Sentimentale . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 483
+Création d’objets magiques sensibles . . . . . . . . . . . . . . . . . . . . . . . . . 484
+Conflit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486
+Artefacts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486
+Orbe du Wyrm . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 486
+Monstres & PNJ 489
+Construction de monstres . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489
+Taille . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489
+Type . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 489
+Classe d’armure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 492
+Points de vie . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 492
+Vitesse . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 493
+Valeurs de caractéristiques . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 493
+Jets de sauvegarde . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 493
+xviii TABLE DES MATIÈRES
+Compétences . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 495
+Vulnérabilités, résistances et immunités . . . . . . . . . . . . . . . . . . . . . . . . 495
+Les sens . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 495
+Langues . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 496
+Défi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 497
+Traits particuliers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 498
+Actions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 499
+Usage limité . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 500
+Équipement . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 500
+Créatures légendaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 501
+Descriptions des monstres . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 502
+Non classé . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 502
+Anges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 572
+Objets animés . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 576
+Démons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 578
+Diables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 586
+Dinosaures . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 596
+Dragons, Chromatique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 597
+Dragons, Métallique . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 617
+Élémentaires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 641
+Champignons . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 644
+Génies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 646
+Goules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 648
+Géants . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 649
+Golems . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 653
+Hags . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 657
+Modèle de demi-dragon . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 660
+Lycanthropes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 661
+Méphites . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 666
+Momies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 669
+Nagas . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 672
+Vases . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 674
+Squelettes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 678
+Sphinx . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 680
+Vampires . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 683
+Zombies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 686
+Créatures diverses . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 688
+Personnages non-joueurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 746
+Personnalisation des PNJ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 746
+Descriptions des personnages non-joueurs . . . . . . . . . . . . . . . . . . . . . . 746
+Les plans d’existence 763
+Le plan matériel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 763
+Au-delà du matériel . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 763
+Voyage planaire . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 763
+Plans transitifs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 764
+Plans intérieurs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 765
+
+-->
+
+
+
+    </div>
+  </div>
+</body>
+
+
+
+
+
+  <!-- Footer -->
+  <footer>  
+          <div class="w3-container w3-padding-32 w3-grey">  
+
+       <div class="w3-row-padding">
+
+      <h3>INFO</h3>
+
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+
+
+      <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      </p>
+
+       </div>
+      </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</html>
+
