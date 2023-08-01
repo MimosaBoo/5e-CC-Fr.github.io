@@ -42,6 +42,15 @@
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 
+
+
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">SRD 5.1 Fr</span>
+  <a href="javascript:void(0)" class="w3-right w3-button light-grey" onclick="w3_open()">☰</a>
+</header>
+
     <nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-center" id="myScrollspy" >
 
   <br>
@@ -55,17 +64,17 @@
                
   <ul class="nav nav-pills nav-stacked">
       <li class="active"><a href="#barbare">Barbare</a></li>
-      <li><a href="#barde">Barde</a></li>
-      <li><a href="#clerc">Clerc</a></li>
-      <li><a href="#druide">Druide</a></li>
-      <li><a href="#guerrier">Guerrier</a></li>
-      <li><a href="#moine">Moine</a></li>
-      <li><a href="#paladin">Paladin</a></li>
-      <li><a href="#rôdeur">Rôdeur</a></li>
-      <li><a href="#roublard">Roublard</a></li>
-      <li><a href="#sorcier">Sorcier</a></li>
-      <li><a href="#invocateur">Invocateur</a></li>
-      <li><a href="#magicien">Magicien</a></li>
+      <li><a href="#barde" onclick="w3_close()">Barde</a></li>
+      <li><a href="#clerc" onclick="w3_close()">Clerc</a></li>
+      <li><a href="#druide" onclick="w3_close()">Druide</a></li>
+      <li><a href="#guerrier" onclick="w3_close()">Guerrier</a></li>
+      <li><a href="#moine" onclick="w3_close()">Moine</a></li>
+      <li><a href="#paladin" onclick="w3_close()">Paladin</a></li>
+      <li><a href="#rôdeur" onclick="w3_close()">Rôdeur</a></li>
+      <li><a href="#roublard" onclick="w3_close()">Roublard</a></li>
+      <li><a href="#sorcier" onclick="w3_close()">Sorcier</a></li>
+      <li><a href="#invocateur" onclick="w3_close()">Invocateur</a></li>
+      <li><a href="#magicien" onclick="w3_close()">Magicien</a></li>
     </ul>
 <hr style="border-top: 3px solid darkred;"> 
 
@@ -84,14 +93,45 @@
 
 
 
+
+
+
+
+
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
   <span class="w3-left w3-padding">SRD 5.1 Fr</span>
-  <a href="javascript:void(0)" class="w3-right w3-button light-grey" onclick="w3_open()">☰</a>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
+<div class=" w3-hide-large w3-animate-opacity w3-overlay" onclick="w3_close()" style="cursor:pointer" title="close side menu"></div>
+
+
+
+
+
+<!--ca vient du conflit entre w3-overlay et .overlay
+--->
+
+<!-- Overlay effect when opening sidebar on small screens 
 <div class=".overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6219,7 +6259,7 @@ feu</em></td>
 <h5>Résistance fiélonne</h5>
 <p>À partir du niveau 10, vous pouvez choisir un type de dégâts lorsque vous terminez un repos court ou long. Vous gagnez une résistance à ce type de dégâts jusqu’à ce que vous en choisissiez un autre avec cette aptitude. Les dégâts infligés par les armes magiques ou les armes en argent ignorent cette résistance.</p>
 
-<h5>Jeter dans les enfers</h5>
+<h5>Traversée dans les enfers</h5>
 <p>À partir du niveau 14, lorsque vous touchez une créature avec une attaque, vous pouvez utiliser cette aptitude pour transporter instantanément la cible à travers les plans inférieurs. La créature disparaît et se précipite dans un paysage de cauchemar.</p>
 <p>À la fin de votre prochain tour, la cible retourne dans l’espace qu’elle occupait précédemment, ou dans l’espace inoccupé le plus proche. Si la cible n’est pas un fiélon, elle subit 10d10 points de dégâts psychiques alors qu’elle se remet de son horrible expérience.</p>
 <p>Une fois que vous avez utilisé cette aptitude, vous ne pouvez plus l’utiliser jusqu’à ce que vous ayez terminé un repos long.</p>
@@ -6706,6 +6746,7 @@ référentiel des sorts de magicien que vous connaissez, à l’exception de vos
 
 
 
+<!--   stop iciiii --->
 
 
 
@@ -6714,125 +6755,15 @@ référentiel des sorts de magicien que vous connaissez, à l’exception de vos
 
 
 
+<p>Le tableau d'évolution de Magicien indique le nombre d’emplacements de sorts dont vous disposez pour lancer vos sorts de niveau 1 et plus. Pour lancer l’un de ces sorts, vous devez dépenser un emplacement du niveau du sort ou d’un niveau supérieur. Vous récupérez tous les emplacements de sorts dépensés lorsque vous terminez un long repos.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
- 
-
-
-
-<h1>relecture et correction fini jusqu'ici...</h1>
-
-
-  
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-<p>Le tableau d'évolution de Magicien indique le nombre
-d’emplacements de sorts dont vous disposez pour lancer vos sorts de 1er niveau et plus. Pour lancer l’un de ces sorts, vous devez dépenser un emplacement du niveau du sort ou d’un niveau supérieur. Vous récupérez tous les emplacements de sorts dépensés lorsque vous terminez un long repos.</p>
 <p>Vous préparez la liste des sorts de magicien que vous pouvez lancer. Pour ce faire, choisissez un nombre de sorts de magicien dans votre Grimoire égal à votre modificateur d’Intelligence + votre niveau de magicien (minimum d’un sort). Les sorts doivent être d’un niveau pour lequel vous disposez d’emplacements de sorts.</p>
-<p>Par exemple, si vous êtes un magicien de 3e niveau, vous avez quatre emplacements de sorts de 1er niveau et deux de 2e niveau. Avec une Intelligence de 16, votre liste de sorts préparés peut inclure six sorts de 1er ou 2e niveau, dans n’importe quelle combinaison, choisis dans votre Grimoire. Si vous préparez le sort <em>missile magique</em> de 1er niveau, vous pouvez le lancer en utilisant un emplacement de 1er niveau ou de 2e niveau. Lancer le sort ne le retire pas de votre liste de sorts préparés.</p>
-<p>Vous pouvez modifier votre liste de sorts préparés lorsque vous
-terminez un repos long. Préparer une nouvelle liste de sorts de magicien
-nécessite du temps passé à étudier votre Grimoire et à mémoriser
-les incantations et les gestes que vous devez faire pour lancer le sort
-: au moins 1 minute par niveau de sort pour chaque sort de votre
-liste.</p>
-<h4>Caractéristique
-d’Incantation</h4>
-<p>L’Intelligence est votre caractéristique d’incantation pour vos sorts
-de magicien, puisque vous apprenez vos sorts en les étudiant et en les
-mémorisant. Vous utilisez votre Intelligence lorsqu’un sort fait
-référence à votre caractéristique d’incantation. De plus, vous utilisez
-votre modificateur d’Intelligence pour déterminer le jet de sauvegarde
-d’un sort de magicien que vous lancez et pour effectuer un jet d’attaque
-avec un tel sort.</p>
+
+<p>Par exemple, si vous êtes un magicien de niveau 3, vous avez quatre emplacements de sorts de niveau 1 et deux de niveau 2. Avec une Intelligence de 16, votre liste de sorts peut inclure six sorts de niveau 1 ou 2, dans n’importe quelle combinaison, choisis dans votre Grimoire. Si vous préparez le sort <em>projectile magique</em> de niveau 1, vous pouvez le lancer en utilisant un emplacement de niveau 1 ou de niveau 2. Lancer le sort ne le retire pas de votre liste de sorts préparés.</p>
+<p>Vous pouvez modifier votre liste de sorts préparés lorsque vous terminez un repos long. Préparer une nouvelle liste de sorts de magicien nécessite du temps passé à étudier votre Grimoire et à mémoriser les incantations et les gestes que vous devez faire pour lancer le sort : au moins 1 minute par niveau de sort pour chaque sort de votre liste.</p>
+
+<h4>Caractéristique d’Incantation</h4>
+<p>L’Intelligence est votre caractéristique d’incantation pour vos sorts de magicien, puisque vous apprenez vos sorts en les étudiant et en les mémorisant. Vous utilisez votre Intelligence lorsqu’un sort fait référence à votre caractéristique d’incantation. De plus, vous utilisez votre modificateur d’Intelligence pour déterminer le jet de sauvegarde d’un sort de magicien que vous lancez et pour effectuer un jet d’attaque avec un tel sort.</p>
 <table style="width:97%;">
 
 <tbody>
@@ -6841,256 +6772,138 @@ avec un tel sort.</p>
 d’Intelligence.</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"><strong>Modificateur d’attaque par
-sort</strong> = votre bonus de maîtrise + votre modificateur
+<td style="text-align: center;"><strong>Modificateur d’attaque par sort</strong> = votre bonus de maîtrise + votre modificateur
 d’Intelligence.</td>
 </tr>
 </tbody>
 </table>
 
 
-<h4>Lancer de rituel</h4>
-<p>Vous pouvez lancer un sort de magicien comme un rituel si ce sort a
-l’étiquette rituel et si vous avez le sort dans votre Grimoire. Il
-n’est pas nécessaire que le sort soit préparé.</p>
-<h4>Focalisation des lanceurs
-de sorts</h4>
-<p>Vous pouvez utiliser un foyer arcanique comme foyer d’incantation
-pour vos sorts de magicien.</p>
-<h4>Apprendre les sorts
-de 1er niveau et plus</h4>
-<p>Chaque fois que vous gagnez un niveau de magicien, vous pouvez
-ajouter gratuitement deux sorts de magicien de votre choix à votre livre
-de sorts. Chacun de ces sorts doit être d’un niveau pour lequel vous
-disposez d’emplacements de sorts, comme indiqué sur la table des
-magiciens.</p>
-<p>Au cours de tes aventures, tu trouveras peut-être d’autres sorts que
-tu pourras ajouter à ton Grimoire.</p>
+<h4>Incantation rituelle</h4>
+<p>Vous pouvez lancer un sort de magicien comme un rituel si ce sort a l’étiquette rituel et si vous avez le sort dans votre Grimoire. Il n’est pas nécessaire que le sort soit préparé.</p>
+
+<h4>Focalisation d'incantation</h4>
+<p>Vous pouvez utiliser un focaliseur arcanique comme focaliseur d’incantation pour vos sorts de magicien.</p>
+
+<h4>Apprendre les sorts de niveau 1 et plus</h4>
+
+<p>Chaque fois que vous gagnez un niveau de magicien, vous pouvez ajouter gratuitement deux sorts de magicien de votre choix à votre livre de sorts. Chacun de ces sorts doit être d’un niveau pour lequel vous disposez d’emplacements de sorts, comme indiqué sur la table des magiciens.</p>
+
+<p>Au cours de vos aventures, vous trouverez peut-être d’autres sorts à ajouter à votre Grimoire.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
-<h3>Régénération occulte</h3>
-<p>Vous avez appris à récupérer une partie de votre énergie magique en
-étudiant votre Grimoire. Une fois par jour, lorsque vous terminez
-un court repos, vous pouvez choisir des emplacements de sorts dépensés
-pour récupérer. Les emplacements de sorts peuvent avoir un niveau
-combiné égal ou inférieur à la moitié de votre niveau de magicien
-(arrondi au supérieur), et aucun des emplacements ne peut être de 6e
-niveau ou plus.</p>
-<p>Par exemple, si vous êtes un magicien de 4e niveau, vous pouvez
-récupérer jusqu’à deux niveaux d’emplacements de sorts. Vous pouvez
-récupérer soit un emplacement de sort de 2e niveau, soit deux
-emplacements de sort de 1er niveau.</p>
+<h3>Restauration magique</h3>
+<p>Vous avez appris à récupérer une partie de votre énergie magique en étudiant votre Grimoire. Une fois par jour, lorsque vous terminez un court repos, vous pouvez choisir des emplacements de sorts dépensés pour récupérer. Les emplacements de sorts peuvent avoir un niveau combiné égal ou inférieur à la moitié de votre niveau de magicien (arrondi au supérieur), et aucun des emplacements ne peut être de niveau 6 ou plus.</p>
+<p>Par exemple, si vous êtes un magicien de niveau 4, vous pouvez récupérer jusqu’à deux niveaux d’emplacements de sorts. Vous pouvez récupérer soit un emplacement de sort de niveau 2, soit deux emplacements de sort de niveau 1.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
 
-<h3>Tradition occulte</h3>
-<p>Lorsque vous allongez le 2e niveau, vous choisissez une tradition
-occulte, façonnant votre pratique de la magie à travers une école
-spécifique .</p>
-<p>Votre choix vous confère des capacités au 2e niveau, puis au 6e,
-10e et 14e niveau.</p>
+<h3>Tradition arcanique</h3>
+<p>Lorsque vous atteignez le niveau 2, vous choisissez une tradition arcanique, façonnant votre pratique de la magie à travers une école spécifique .</p>
+<p>Votre choix vous confère des capacités au niveau 2, 6,
+10 et 14.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
-<h3>Amélioration
-de la valeur de caractéristiques</h3>
-<p>Lorsque vous atteignez le 4e niveau, et de nouveau au 8e, 12e, 16e et
-19e niveau, vous pouvez augmenter une valeur de caractéristique de +2, ou deux valeur de caractéristiquede de +1. Cette aptitude ne vous permet pas d'augmenter une valeur de caractéristique au-dessus de 20.</p>
+<h3>Amélioration de caractéristiques</h3>
+<p>Lorsque vous atteignez le niveau 4, 8, 12, 16 et
+19, vous pouvez augmenter une valeur de caractéristique de +2, ou deux valeur de caractéristique de de +1. Cette aptitude ne vous permet pas d'augmenter une valeur de caractéristique au-dessus de 20.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
 <h3>Maîtrise des sorts</h3>
-<p>Au 18e niveau, vous avez atteint une telle maîtrise de certains
-sorts que vous pouvez les lancer à volonté. Choisissez un sort de
-magicien de 1er niveau et un sort de magicien de 2e niveau qui se
-trouvent dans votre Grimoire. Vous pouvez lancer ces sorts à leur
-plus bas niveau sans dépenser un emplacement de sort lorsque vous les
-avez préparés. Si vous voulez lancer l’un ou l’autre de ces sorts à un
-niveau supérieur, vous devez dépenser un emplacement de sort comme
-d’habitude.</p>
-<p>En passant 8 heures à l’étude, vous pouvez échanger l’un ou les deux
-sorts que vous avez choisis contre d’autres sorts de même niveau.</p>
+<p>Au niveau 18, vous avez atteint une telle maîtrise de certains sorts que vous pouvez les lancer à volonté. Choisissez un sort de magicien de niveau 1 et un sort de magicien de niveau 2 qui se trouvent dans votre Grimoire. Vous pouvez lancer ces sorts à leur plus bas niveau sans dépenser un emplacement de sort lorsque vous les avez préparés. Si vous voulez lancer l’un ou l’autre de ces sorts à un niveau supérieur, vous devez dépenser un emplacement de sort.</p>
+
+<p>En passant 8 heures à étudier, vous pouvez échanger l’un ou les deux sorts que vous avez choisis contre d’autres sorts de même niveau.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
 <h3>Sorts de prédilection</h3>
-<p>Lorsque vous atteignez le 20e niveau, vous obtenez la maîtrise de
-deux puissants sorts et pouvez les lancer sans trop d’efforts.
-Choisissez deux sorts de magicien de 3e niveau dans votre Grimoire
-comme vos sorts de signature. Vous avez toujours ces sorts préparés, ils
-ne comptent pas dans le nombre de sorts que vous avez préparés, et vous
-pouvez les lancer chacun une fois au 3e niveau sans dépenser un
-emplacement de sort. Lorsque vous le faites, vous ne pouvez plus le
-faire jusqu’à ce que vous ayez terminé un repos court ou long.</p>
-<p>Si vous voulez lancer l’un ou l’autre de ces sorts à un niveau
-supérieur, vous devez dépenser un emplacement de sort comme
-d’habitude.</p>
+<p>Lorsque vous atteignez le niveau 20, vous obtenez la maîtrise de deux puissants sorts et pouvez les lancer sans trop d’efforts. Choisissez deux sorts de magicien de niveau 3 dans votre Grimoire comme vos sorts de signature. Vous avez toujours ces sorts préparés, ils ne comptent pas dans le nombre de sorts que vous avez préparés, et vous pouvez les lancer chacun une fois au niveau 3 sans dépenser un emplacement de sort. Lorsque vous le faites, vous ne pouvez plus le faire jusqu’à ce que vous ayez terminé un repos court ou long.</p>
+<p>Si vous voulez lancer l’un ou l’autre de ces sorts à un niveau supérieur, vous devez dépenser un emplacement de sort.</p>
 
      <hr style="border-top: 1px solid darkred; width:50%; margin:auto;"> 
 
-<h3>Traditions magiques du
-Magicien</h3>
-<p>L’étude de la magie est ancienne, remontant aux premières découvertes
-de la magie par les mortels. Elle est fermement établie dans les univers
-de jeux fantastiques, avec diverses traditions dédiées à son étude
-complexe.</p>
-<p>Les traditions occultes les plus communes dans le multivers tournent
-autour des écoles de magie. Les magiciens, à travers les âges, ont
-répertorié des milliers de sorts, les regroupant en huit catégories
-appelées écoles. Dans certains endroits, ces traditions sont
-littéralement des écoles. Dans d’autres établissements, les écoles
-ressemblent davantage à des départements universitaires, avec des
-facultés rivales qui se disputent les étudiants et les financements.
-Même les magiciens qui forment des apprentis dans la solitude de leur
-propre tour utilisent la division de la magie en écoles comme un moyen
-d’apprentissage, puisque les sorts de chaque école exigent la maîtrise
-de techniques différentes.</p>
+<h3>Traditions Arcaniques</h3>
+<p>L’étude des arcanes est ancienne, remontant aux premières découvertes de la magie par les mortels. Elle est fermement ancrée dans les univers de jeux fantastiques, avec diverses traditions dédiées à son étude complexe.</p>
+<p>Les traditions arcaniques les plus courantes dans le multivers gravitent autour des écoles de magie. Les magiciens, à travers les âges, ont répertorié des milliers de sorts, les regroupant en huit catégories appelées écoles. 
+
+Il arrive que ces traditions deviennent littéralement des écoles. Dans d’autres institutions, les écoles ressemblent davantage à des départements universitaires, avec des facultés rivales qui se disputent les étudiants et les financements. Même les magiciens qui forment des apprentis dans la solitude de leur tour utilisent cette division de la magie en écoles comme moyen d’apprentissage, puisque les sorts de chaque école exigent la maîtrise de techniques différentes.</p>
+
+
 <h4>École de l’Évocation</h4>
-<p>Vous concentrez votre étude sur la magie qui crée de puissants effets
-élémentaires tels que le froid glacial, les flammes brûlantes, le
-tonnerre roulant, les éclairs crépitants et l’acide brûlant. Certains
-évokers trouvent un emploi dans les forces militaires, servant
-d’artillerie pour faire exploser les armées ennemies à distance.
-D’autres utilisent leur pouvoir spectaculaire pour protéger les faibles,
-tandis que d’autres encore cherchent à s’enrichir en tant que bandits,
-aventuriers ou tyrans en herbe.</p>
-<h5>Maître évocateur</h5>
-<p>À partir du moment où vous choisissez cette école au 2e niveau, l’or
-et le temps que vous devez dépenser pour copier un sort d’évocation dans
-votre Grimoire sont réduits de moitié.</p>
-<h5>Sculpter des sorts</h5>
-<p>À partir du 2e niveau, vous pouvez créer des poches de sécurité
-relative dans les effets de vos sorts d’évocation. Lorsque vous lancez
-un sort d’évocation qui affecte d’autres créatures que vous pouvez voir,
-vous pouvez choisir un nombre d’entre elles égal à 1 + le niveau du
-sort. Les créatures choisies réussissent automatiquement leurs jets de
-sauvegarde contre le sort, et elles ne subissent aucun dégât si elles
-subissent normalement la moitié des dégâts en cas de sauvegarde
-réussie.</p>
+<p>Vous concentrez votre étude sur la magie qui crée de puissants effets élémentaires tels que le froid mordants, les flammes intenses, un coup de tonnerre assourdissant, les éclairs crépitants ou l’acide brûlant. Certains évocateur trouvent un emploi dans les forces militaires, servant d’artillerie pour faire exploser les armées ennemies à distance. D’autres utilisent leur pouvoir spectaculaire pour protéger les faibles, tandis que d’autres encore cherchent à s’enrichir en tant que bandits, aventuriers ou tyrans en herbe.</p>
+
+
+<h5>Évocateur érudit</h5>
+<p>À partir du moment où vous choisissez cette école au 2e niveau, l’or et le temps que vous devez dépenser pour copier un sort d’évocation dans votre Grimoire sont réduits de moitié.</p>
+
+<h5>Façonneur de sorts</h5>
+<p>À partir du niveau 2, vous pouvez créer des poches de sécurité relative au sein des effets de vos sorts d’évocation. Lorsque vous lancez un sort d’évocation qui affecte d’autres créatures que vous, se trouvant dans votre champ de vision, vous pouvez choisir un nombre d’entre elles égal à 1 + le niveau du sort. Les créatures choisies réussissent automatiquement leurs jets de sauvegarde contre le sort, et elles ne subissent aucun dégât si elles subissent normalement la moitié des dégâts en cas de sauvegarde réussie.</p>
+
 <h5>Tour de magie puissant</h5>
-<p>À partir du 6e niveau, vos Tour de magie:s dommageables affectent même les
-créatures qui évitent le choc de l’effet. Lorsqu’une créature réussit un
-jet de sauvegarde contre votre tour de magie, elle subit la moitié des
-dégâts du tour de magie (le cas échéant), mais ne subit aucun effet
-supplémentaire du tour de magie.</p>
+<p>À partir du niveau 6, vos Tour de magies qui infligent des dégâts affectent même les créatures qui arrivent à éviter l’effet. Lorsqu’une créature réussit un jet de sauvegarde contre votre tour de magie, elle subit la moitié des
+dégâts (le cas échéant), mais ne subit aucun effet supplémentaire du tour de magie.</p>
+
 <h5>Évocation améliorée</h5>
-<p>À partir du 10e niveau, vous pouvez ajouter votre modificateur
-d’Intelligence à un jet de dégâts de tout sort d’évocation de magicien
-que vous lancez.</p>
+<p>À partir du niveau 10, vous pouvez ajouter votre modificateur
+d’Intelligence à un jet de dégâts de tout sort d’évocation de magicien que vous lancez.</p>
+
 <h5>Surcanalisation</h5>
-<p>À partir du 14e niveau, vous pouvez augmenter la puissance de vos
-sorts plus simples. Lorsque vous lancez un sort de magicien du 1er au 5e
-niveau qui inflige des dégâts, vous pouvez infliger le maximum de dégâts
-avec ce sort.</p>
-<p>La première fois que vous le faites, vous ne subissez aucun effet
-indésirable. Si vous utilisez à nouveau cette caractéristique avant de
-terminer un repos long, vous subissez 2d12 dégâts nécrotiques pour
-chaque niveau du sort, immédiatement après l’avoir lancé. Chaque fois
-que vous utilisez à nouveau cette caractéristique avant de terminer un
-repos long, les dégâts nécrotiques par niveau de sort augmentent de
-1d12. Ces dégâts ignorent la résistance et l’immunité.</p>
+<p>À partir du niveau 14, vous pouvez augmenter la puissance de vos sorts les plus simples. Lorsque vous lancez un sort de magicien de niveau 1 a 5 qui inflige des dégâts, vous pouvez infliger le maximum de dégâts possible avec ce sort.</p>
+
+<p>La première fois que vous le faites, vous ne subissez aucun effet indésirable. Si vous utilisez à nouveau cette aptitudes avant de terminer un repos long, vous subissez 2d12 dégâts nécrotiques pour chaque niveau du sort, immédiatement après l’avoir lancé. Chaque fois que vous utilisez à nouveau cette aptitude avant de terminer un repos long, les dégâts nécrotiques par niveau de sort augmentent de 1d12. Ces dégâts ignorent la résistance et l’immunité.</p>
 
 
 
 <h4>Votre Grimoire</h4>
-<p>Les sorts que vous ajoutez à votre Grimoire au fur et à mesure
-que vous gagnez des niveaux reflètent les recherches arcaniques que vous
-menez par vous-même, ainsi que les percées intellectuelles que vous avez
-faites sur la nature du multivers. Vous pouvez trouver d’autres sorts au
-cours de vos aventures. Vous pourriez découvrir un sort enregistré sur
-un parchemin dans le coffre d’un magicien maléfique, par exemple, ou
-dans un tome poussiéreux d’une bibliothèque ancienne.</p>
-<p><strong><em>Copier un sort dans le livre.</em></strong> Lorsque vous
-trouvez un sort de magicien de 1er niveau ou plus, vous pouvez l’ajouter
-à votre Grimoire s’il est d’un niveau que vous pouvez préparer et
-si vous avez le temps de le déchiffrer et de le copier.</p>
-<p>Copier ce sort dans votre Grimoire implique de reproduire la
-forme de base du sort, puis de déchiffrer le syste unique de notation
-utilisé par le magicien qui l’a écrit. Vous devez pratiquer le sort
-jusqu’à ce que vous compreniez les sons ou les gestes requis, puis le
-transcrire dans votre Grimoire en utilisant votre propre
-notation.</p>
-<p>Pour chaque niveau du sort, le processus prend 2 heures et coûte 50
-gp. Ce coût représente les composants matériels que vous dépensez
-pendant que vous expérimentez le sort pour le maîtriser, ainsi que les
-encres fines dont vous avez besoin pour l’enregistrer. Une fois que vous
-avez dépensé ce temps et cet argent, vous pouvez préparer le sort comme
-vos autres sorts.</p>
-<p><strong><em>Remplacer le livre.</em></strong> Vous pouvez copier un
-sort de votre propre Grimoire dans un autre livre, par exemple si
-vous voulez faire une copie de sauvegarde de votre Grimoire. Cela
-revient à copier un nouveau sort dans votre Grimoire, mais plus
-rapidement et plus facilement, puisque vous comprenez votre propre
-notation et savez déjà comment lancer le sort. Vous n’avez besoin de
-dépenser qu’une heure et 10 gp pour chaque niveau du sort copié.</p>
+<p>Les sorts que vous ajoutez à votre Grimoire au fur et à mesure que votre progression reflètent les recherches arcaniques que vous menez, ainsi que les découvertes sur la nature du multivers. Néanmoins, vous pouvez trouver d’autres sorts au cours de vos aventures. Vous pourriez découvrir un sort enregistré sur un parchemin dans le coffre d’un magicien maléfique, par exemple, ou dans un tome poussiéreux d’une bibliothèque ancienne.</p>
+
+<p><strong><em>Copier un sort dans le grimoire.</em></strong> Lorsque vous trouvez un sort de magicien de niveau 1 ou plus, vous pouvez l’ajouter à votre Grimoire s’il est d’un niveau que vous pouvez préparer et si vous avez le temps de le déchiffrer et de le copier.</p> 
+
+<p>Copier ce sort dans votre Grimoire implique de reproduire la forme de base du sort, puis de déchiffrer le code unique utilisé par le magicien qui l’a écrit. Vous devez pratiquer le sort jusqu’à ce que vous compreniez les sons ou les gestes requis, puis le transcrire dans votre Grimoire en utilisant votre propre notation.</p>
+
+<p>Pour chaque niveau de sort, le processus prend 2 heures et coûte 50 po. Ce coût représente les composants matériels que vous dépensez pendant que vous expérimentez le sort pour le maîtriser, ainsi que les encres raffinées dont vous avez besoin pour l'écrire. Une fois que vous avez dépensé ce temps et cet argent, vous pouvez préparer le sort comme vos autres sorts.</p>
+
+
+<p><strong><em>Remplacer le grimoire.</em></strong> Vous pouvez copier un sort de votre propre Grimoire dans un autre grimoire, par exemple si vous voulez faire une copie par sécurité. 
+Il s'agit du même processus que pour copiez un nouveau sort dans votre grimoire, mais plus rapidement et plus facilement, puisque vous utilisez votre propre notation et savez déjà comment lancer le sort. Vous n’avez besoin de dépenser qu’une heure et 10 po pour chaque niveau du sort copié.</p>
+
 <p>Si vous perdez votre Grimoire, vous pouvez utiliser la même
-procédure pour transcrire les sorts que vous avez préparés dans un
-nouveau Grimoire. Pour remplir le reste de votre Grimoire,
-vous devrez trouver de nouveaux sorts, comme d’habitude. C’est pour
-cette raison que de nombreux magiciens conservent des carnets de sorts
-de secours dans un endroit sûr.</p>
-<p><strong><em>L’apparence du livre.</em></strong> Votre Grimoire
-est une compilation unique de sorts, avec ses propres fioritures
-décoratives et ses notes en marge. Il peut s’agir d’un volume en cuir
-simple et fonctionnel que vous avez reçu en cadeau de votre maître, d’un
-tome finement relié et doré que vous avez trouvé dans une bibliothèque
-ancienne, ou même d’une collection de notes rassemblées après avoir
-perdu votre précédent Grimoire dans une mésaventure.</p>
+procédure pour transcrire les sorts que vous avez préparés dans un nouveau Grimoire. Afin de compléter de votre Grimoire,
+vous devrez trouver de nouveaux sorts. C’est pour cette raison que de nombreux magiciens conservent des carnets de sorts de secours dans un endroit sûr.</p>
+
+
+<p><strong><em>L’apparence du grimoire.</em></strong> Votre Grimoire est une compilation unique de sorts, avec ses propres fioritures décoratives et ses notes en marge. Il peut s’agir d’un volume en cuir simple et fonctionnel que vous avez reçu en cadeau de votre maître, d’un tome finement relié et doré que vous avez trouvé dans une bibliothèque ancienne, ou même d’une collection de notes rassemblées après avoir perdu votre précédent Grimoire dans une mésaventure.</p>
+
+
+
+
+
+
 
 <h4>Les écoles de magie</h4>
-<p>Les académies de magie regroupent les sorts en huit catégories
-appelées écoles de magie. Les érudits, en particulier les magiciens,
-appliquent ces catégories à tous les sorts, estimant que toute magie
-fonctionne essentiellement de la même manière, qu’elle soit le fruit
-d’une étude rigoureuse ou qu’elle soit conférée par une divinité.</p>
-<p>Les écoles de magie aident à décrire les sorts ; elles n’ont pas de
-règles propres, bien que certaines règles fassent référence aux
-écoles.</p>
-<p>Les sorts d’<strong>abjuration</strong> sont de nature protectrice,
-bien que certains d’entre eux aient des utilisations agressives. Ils
-créent des barrières magiques, annulent les effets néfastes, nuisent aux
-intrus ou bannissent les créatures vers d’autres plans d’existence.</p>
-<p>Les sorts de<strong>conjuration</strong> permettent de transporter
-des objets et des créatures d’un endroit à un autre. Certains sorts
-convoquent des créatures ou des objets aux côtés du lanceur, tandis que
-d’autres permettent au lanceur de se téléporter dans un autre lieu.
-Certaines conjurations créent des objets ou des effets à partir de
-rien.</p>
-<p>Les sorts de<strong>divination</strong> révèlent des informations,
-qu’il s’agisse de secrets oubliés depuis longtemps, d’aperçus de
-l’avenir, de l’emplacement de choses cachées, de la vérité derrière des
-illusions ou de visions de personnes ou de lieux éloignés.</p>
-<p>Les sorts d’<strong>enchantement</strong> affectent l’esprit des
-autres, influençant ou contrôlant leur comportement. Ces sorts peuvent
-faire en sorte que des ennemis voient le lanceur de sorts comme un ami,
-forcer des créatures à suivre une ligne de conduite, ou même contrôler
-une autre créature comme une marionnette.</p>
-<p>Les sorts d’<strong>évocation</strong> manipulent l’énergie magique
-pour produire un effet désiré. Certains appellent des explosions de feu
-ou des éclairs. D’autres canalisent l’énergie positive pour guérir les
-blessures.</p>
-<p>Les sorts d’<strong>illusion</strong> trompent les sens ou l’esprit
-des autres. Ils amènent les gens à voir des choses qui ne sont pas là, à
-manquer des choses qui sont là, à entendre des bruits fantômes ou à se
-souvenir de choses qui ne sont jamais arrivées. Certaines illusions
-créent des images fantômes que toute créature peut voir, mais les
-illusions les plus insidieuses plantent une image directement dans
-l’esprit d’une créature.</p>
-<p>Les sorts de<strong>nécromancie</strong> manipulent les énergies de
-vie et de mort. Ces sorts peuvent accorder une réserve supplémentaire de
-force vitale, drainer l’énergie vitale d’une autre créature, créer des
-morts-vivants ou même ramener les morts à la vie. Créer des
-morts-vivants à l’aide de sorts de nécromancie tels que <em>Animer les
-morts</em> n’est pas une bonne action, et seuls les lanceurs de sorts
-maléfiques utilisent fréquemment de tels sorts.</p>
-<p>Les sorts de<strong>transmutation</strong> modifient les propriétés
-d’une créature, d’un objet ou d’un environnement. Ils peuvent
-transformer un ennemi en une créature inoffensive, renforcer la force
-d’un allié, faire bouger un objet à la demande du lanceur de sorts ou
-améliorer les capacités de guérison innées d’une créature pour qu’elle
-se remette rapidement d’une blessure.</p>
+<p>Les académies de magie regroupent les sorts en huit catégories appelées écoles de magie. Les érudits, en particulier les magiciens, appliquent ces catégories à tous les sorts, estimant que toute magie fonctionne essentiellement de la même manière, qu’elle soit le fruit d’une étude rigoureuse ou qu’elle soit conférée par une divinité.</p>
+<p>Les écoles de magie aident à décrire les sorts; elles n’ont pas de règles propres, bien que certaines règles fassent référence aux écoles.</p>
+
+<p>Les sorts d’<strong>abjuration</strong> sont de nature protectrice, bien que certains d’entre eux aient des utilisations agressives. Ils créent des barrières magiques, annulent les effets néfastes, nuisent aux intrus ou bannissent les créatures vers d’autres plans d’existence.</p>
+
+<p>Les sorts de<strong>conjuration</strong> permettent de transporter des objets et des créatures d’un endroit à un autre. Certains sorts convoquent des créatures ou des objets aux côtés de l'incantateur, tandis que d’autres lui permettent de se téléporter dans un autre lieu. Certaines incantateurs créent des objets ou des effets à partir de rien.</p>
+
+<p>Les sorts de<strong>divination</strong> révèlent des informations, qu’il s’agisse de secrets oubliés depuis longtemps, d’aperçus de l’avenir, de l’emplacement de choses cachées, de la vérité derrière des illusions ou de visions de personnes ou de lieux éloignés.</p>
+
+<p>Les sorts d’<strong>enchantement</strong> affectent l’esprit des autres, influençant ou contrôlant leur comportement. Ces sorts peuvent faire en sorte que des ennemis voient le lanceur de sorts comme un ami, forcer des créatures à suivre une ligne de conduite, ou même contrôler une autre créature comme une marionnette.</p>
+
+<p>Les sorts d’<strong>évocation</strong> manipulent l’énergie magique pour produire un effet désiré. Certains appellent le déchaînent le feu ou des éclairs. D’autres canalisent l’énergie positive pour guérir les blessures.</p>
+
+<p>Les sorts d’<strong>illusion</strong> trompent les sens ou l’esprit des autres. Ils amènent les gens à voir des choses qui ne sont pas là, à manquer des choses qui sont là, à entendre des bruits fantômes ou à se souvenir de choses qui ne sont jamais arrivées. Certaines illusions créent des images fantômes que toute créature peut voir, mais les illusions les plus insidieuses plantent une image directement dans l’esprit d’une créature.</p>
+
+<p>Les sorts de<strong>nécromancie</strong> manipulent les énergies de vie et de mort. Ces sorts peuvent accorder une réserve supplémentaire de force vitale, drainer l’énergie vitale d’une autre créature, créer des morts-vivants ou même réssuciter des défunts à la vie. 
+Créer des morts-vivants à l’aide de sorts de nécromancie tels que <em>Animation de morts</em> n’est pas une bonne action, et seuls les lanceurs de sorts maléfiques utilisent fréquemment de tels sorts.</p>
+
+<p>Les sorts de<strong>transmutation</strong> modifient les propriétés d’une créature, d’un objet ou d’un environnement. Ils peuvent transformer un ennemi en une créature inoffensive, renforcer la force d’un allié, faire bouger un objet ou améliorer les capacités de guérison innées d’une créature pour qu’elle se remette rapidement d’une blessure.</p>
 
 
  <hr style="border-top: 5px solid darkred;"> 
