@@ -1,113 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>SRD 5.1 Fr - Races</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+     <link rel="stylesheet" type="text/css" href="main.css">
+		  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-<!DOCTYPE html>
-<html lang="en">
+	</head>
+	<body class="is-preload">
 
-  <title>SRD 5.1 Fr - Races</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-          <script>
-          // Script to open and close sidebar
-          function w3_open() {
-            document.getElementById("myScrollspy").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-          }
-           
-          function w3_close() {
-            document.getElementById("myScrollspy").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-          }
+		<!-- Header -->
+			<div id="header">
 
-          // Modal Image Gallery
-          function onClick(element) {
-            document.getElementById("img01").src = element.src;
-            document.getElementById("modal01").style.display = "block";
-            var captionText = document.getElementById("caption");
-            captionText.innerHTML = element.alt;
-          }
-          </script>
+				<div class="top">
 
-      <style>
-          h1,h2,h3,h4,h5  {font-family: Georgia;}
-          body{font-family: "Raleway", sans-serif;}
-          h4, h3, h1 {color:darkred;}
-          h3 {font-weight: bold}
-      </style>
-</head>
+  <!-- Logo -->
+  <div><a href="index.html">
+    <h1 id="title">5e édition</h1>
+    <h2 id="title2">SRD 5.1 Fr</h2></a>
+  </div>
+					<!-- Nav -->
+	<nav id="nav">
+		<ul>
+<li><a href="races.html" class="active">Races</a></li>
+      <li><a href="#elfe" id="top-link"> Elfe</a></li>
+      <li><a href="#halfelin" id="top-link">Halfelin </a></li>
+      <li><a href="#humain" id="top-link">Humain</a></li>
+      <li><a href="#nain" id="top-link">Nain</a></li>
+      <li><a href="#demi-elfe" id="top-link">Demi-Elfe</a></li>
+      <li><a href="#demi-orc" id="top-link">Demi-Orc</a></li>
+      <li><a href="#gnome" id="top-link">Gnome</a></li>
+      <li><a href="#sangdragon" id="top-link">Sangdragon</a></li>
+      <li><a href="#tieffelin" id="top-link">Tieffelin</a></li>
+<li><a href="classes.html">Classes</a></li>
+<li><a href="progression.html">Progression</a></li>
+<li><a href="equipements.html">Équipements</a></li>
+<li><a href="dons.html">Dons</a></li>
+<li><a href="caracteristiques.html">Caractéristiques</a></li>
+<li><a href="aventures.html">Aventures</a></li>
+<li><a href="combat.html">Le combat étape par étape</a></li>
+<li><a href="incantation.html">Incantation</a></li>
+<li><a href="objetsmagiques.html">Objets magiques</a></li>
+<li><a href="monstres.html">Monstres & PNJ</a></li>
+		</ul>
+	</nav>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+				</div>
+<!-- 
+				<div class="bottom">
 
-    <nav class="w3-sidebar w3-bar-block w3-light-grey w3-animate-left w3-text-grey w3-collapse w3-center" id="myScrollspy" >
+					 Social Icons  
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
 
-  <br>
-     <a href="index.html" class="w3-bar-item w3-button">
-       <h3 class="w3-padding-64 w3-center"><b>5e édition<br>SRD 5.1 Fr</b></h3></a>
-     <a href="races.html" class="w3-bar-item w3-button w3-bold" id="darkred" >-- Races --</a>
+				</div>-->
 
-                  <ul class="nav nav-pills nav-stacked">
-                      <li class="active"><a href="#elfe">Elfe</a></li>
-                      <li><a href="#halfelin">Halfelin</a></li>
-                      <li><a href="#humain">Humain</a></li>
-                      <li><a href="#nain">Nain</a></li>
-                      <li><a href="#demi-elfe">Demi-Efle</a></li>
-                      <li><a href="#demi-orc">Demi-Orc</a></li>
-                      <li><a href="#gnome">Gnome</a></li>
-                      <li><a href="#sangdragon">Sangdragon</a></li>
-                      <li><a href="#tieffelin">Tieffelin</a></li>
-                    </ul>
-                   
-               <hr style="border-top: 3px solid darkred;"> 
+			</div>
 
-
-     <a href="classes.html" class="w3-bar-item w3-button">Classes</a>
-     <a href="progression.html" class="w3-bar-item w3-button">Progression</a>
-     <a href="equipements.html" class="w3-bar-item w3-button">Équipements</a>
-     <a href="dons.html" class="w3-bar-item w3-button">Dons</a>
-     <a href="caracteristiques.html" class="w3-bar-item w3-button">Caractéristique</a>
-     <a href="aventures.html" class="w3-bar-item w3-button">Aventures</a>
-     <a href="combat.html" class="w3-bar-item w3-button">Le combat étape par étape</a>
-     <a href="incantation.html" class="w3-bar-item w3-button">Incantation</a>
-     <a href="objetsmagiques.html" class="w3-bar-item w3-button">Objets magiques</a>
-     <a href="monstres.html" class="w3-bar-item w3-button">Monstres</a>
-</nav>
+		<!-- Main -->
+			<div id="main">
 
 
 
 
 
-<!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-  <span class="w3-left w3-padding">SRD 5.1 Fr</span>
-  <a href="javascript:void(0)" class="w3-right w3-button light-grey" onclick="w3_open()">☰</a>
-</header>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class=".overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
+<div class="container">
+	<br>
 
 
 
-<!-- Page content -->
-<div class="w3-main">
-  <div class="w3-container w3-padding-large w3-justify w3-content w3-padding-32" id="content">
-
-
-<br><br><br>
-
- <hr style="border-top: 5px solid darkred;"> 
-
-
-
- 
- 
-<!-- Section "Races" -->
-
-  <h1 id="races">Races</h1>
-   <hr style="border-top: 3px solid darkred;"> 
+ <hr style="border-top: 5px solid darkred;">
+  <header><!-- Section "Races" -->
+    <h3 id="races">Races</h3>
+    <hr style="border-top: 3px solid darkred;"> 
+   </header>
 
   <h5>Traits Raciaux</h5>
   <p>Chaque race inclut des traits raciaux communs à tous ses membres. Les entrées suivantes apparaissent parmi les traits de la plupart des races.</p>
@@ -116,7 +95,7 @@
   <p>Chaque race donne un bonus à une ou plusieurs caractéristiques d'un personnage.</p>
   
   <h5>Âge</h5>
-  <p>L’entrée âge indique l’âge auquel un membre d'une race est considéré comme un adulte, ainsi que l’espérance de vie de cette race. Ces informations peuvent vous aider à déterminer l’âge de votre personnAugmentationage au début du jeu. Vous pouvez choisir n’importe quel âge pour votre personnage, ce choix pourra expliquer certaines de vos valeurs de caractéristiques. Par exemple, si vous jouez un personnage jeune ou très vieux, votre âge pourrait expliquer un score de Force ou de Constitution particulièrement bas, tandis qu’un âge avancé pourrait expliquer une Intelligence ou une Sagesse élevée.</p>
+  <p>L’entrée âge indique l’âge auquel un membre d'une race est considéré comme un adulte, ainsi que l’espérance de vie de cette race. Ces informations peuvent vous aider à déterminer l’âge de votre personnage au début du jeu. Vous pouvez choisir n’importe quel âge pour votre personnage, ce choix pourra expliquer certaines de vos valeurs de caractéristiques. Par exemple, si vous jouez un personnage jeune ou très vieux, votre âge pourrait expliquer un score de Force ou de Constitution particulièrement bas, tandis qu’un âge avancé pourrait expliquer une Intelligence ou une Sagesse élevée.</p>
   
   <h5>Alignement</h5>
   <p>La plupart des races ont des tendances envers certains alignements, décrites dans cette entrée. Ceux-ci ne sont pas contraignants pour les personnages joueurs, mais réfléchir à la raison pour laquelle votre nain est d'alignement chaotique, par exemple, en rébellion envers la société naine Loyale, peut vous aider à mieux définir votre personnage.</p>
@@ -140,7 +119,7 @@
  
   
   <!-- Elf -->
-  <h3 id="elfe">Elfe</h3>
+  <header><h3 id="elfe">Elfe</h3></header>
   <h5>Traits Elfes</h5>
   <p>Votre personnage elfe possède une variété d'aptitudes naturelles, le résultat de milliers d'années de raffinement elfique.</p>
   
@@ -190,7 +169,7 @@
 
 
   <!-- Halfelin -->
-  <h3 id="halfelin">Halfelin</h3>
+  <header><h3 id="halfelin">Halfelin</h3></header>
   <h5>Traits Halfelins</h5>
   <p>Votre personnage halfelin possède un certain nombre de traits commun à tous les autres halfelins.</p>
   
@@ -231,7 +210,7 @@
 
 
   <!-- Humain -->
-  <h3 id="humain">Humain</h3>
+  <header><h3 id="humain">Humain</h3></header>
   <h5>Traits Humains</h5>
 
 <p>Il est difficile de faire des généralisations sur les humains, mais votre personnage humain présente ces caractéristiques.</p>
@@ -257,7 +236,7 @@
 
 
 
-  <h3 id="nain">Nain</h3>
+  <header><h3 id="nain">Nain</h3></header>
 
   <h5>Traits Nains</h5>
   <p>Votre personnage nain possède un ensemble de capacités innées, faisant partie intégrante de la nature naine.</p>
@@ -307,7 +286,7 @@
 
 
 <!-- Demi-Elf -->
-<h3 id="demi-elfe">Demi-Elfe</h3>
+<header><h3 id="demi-elfe">Demi-Elfe</h3></header>
 <h5>Traits Demi-Elfes</h5>
 <p>Votre personnage demi-elfe possède certaines qualités communes aux elfes et d'autres qui lui sont propres.</p>
 
@@ -330,7 +309,7 @@
 
 
 <!-- Demi-Orc -->
-<h3 id="demi-orc">Demi-Orc</h3>
+<header><h3 id="demi-orc">Demi-Orc</h3></header>
 <h5>Traits Demi-Orc </h5>
 <p>Votre personnage demi-orque possède certaines caractéristiques dérivées de votre ascendance orque.</p>
 
@@ -352,7 +331,7 @@
 
 
 <!-- Gnome -->
-<h3 id="gnome">Gnome</h3>
+<header><h3 id="gnome">Gnome</h3></header>
 <h5>Traits Gnomes</h5>
 <p>Votre personnage gnome possède certaines caractéristiques communes à tous les autres gnomes.</p>
 
@@ -400,7 +379,7 @@
  
   
   <!-- Sangdragon -->
-  <h3 id="sangdragon">Sangdragon</h3>
+  <header><h3 id="sangdragon">Sangdragon</h3></header>
   <h5>Traits Sangdragons</h5>
   <p>Votre héritage draconique se manifeste à travers une variété de traits que vous partagez avec les autres sangdragons.</p>
   
@@ -426,7 +405,7 @@
 
 
 <div style="overflow-x:auto;">
-  <table class="w3-table-all">
+  <table>
 
  <tr>
 
@@ -531,7 +510,7 @@
 
 
 <!-- tieffelin -->
-<h3 id="tieffelin">Tieffelin</h3>
+<header><h3 id="tieffelin">Tieffelin</h3></header>
 <h5>Traits Tieffelins</h5>
 <p>Les tieffelins partagent certaines caractéristiques raciales en raison de leur ascendance infernale.</p>
 
@@ -550,47 +529,37 @@
 
  <hr style="border-top: 5px solid darkred;"> 
 
-
-
-
-
-
-<div class="w3-clear w3-center nextprev">
-<a class="w3-left w3-btn" href="index.html">❮<span class="w3-hide-small"> Index</span></a>
-<a class="w3-btn" href="races.html"><span class="w3-hide-small">Races </span></a>
-<a class="w3-right w3-btn" href="classes.html"><span class="w3-hide-small">Classes </span>❯</a>
-  
-    </div>
 </div>
-  </div>
-</body>
 
+ 
 
+			</div>
 
-
-
-  <!-- Footer -->
-  <footer class="w3-grey">  
-          <div class="w3-container w3-padding-large w3-justify w3-content w3-padding-3 ">  
-       <div class="w3-row-padding">
-
+		<!-- Footer -->
+			<div id="footer">
 <h3>Bienvenue sur la version 5.1 en Creative Commons</h3>
 
- <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.</p>
-<p>Travail basé sur la première traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab.</a></p>
-<p>Je suis Mimosa. <a href="https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/">Voici le lien vers le github de ce site,</a>
-et vous pouvez me contacter sur <a  href="https://www.instagram.com/mimosa_boo/">instagram.</a></p>
- <p>Cette page est, normalement, terminée </p>
-      </p>
+ <p>Ce travail comprend des éléments tirés du <a href="https://dnd.wizards.com/resources/systems-reference-document"> Document de référence du système 5.1 ("SRD 5.1")</a> de Wizards of the Coast LLC. 
 
-       </div>
-      </div>
-  </footer>
+<br>
+Le SRD 5.1 est sous licence <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International License</a>.<br>
 
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+Travail basé sur la première traduction par Jean-Baptiste BOURGOIN disponible sur <a href="https://gitlab.com/jbbourgoin/srd5.1-cc-by-fr/">GitLab.</a><br>
 
-</div>
+Je suis Mimosa. <a href="https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/">Voici le lien vers le github de ce site,</a> et vous pouvez me contacter sur <a  href="https://www.instagram.com/mimosa_boo/">instagram.</a><br>     
 
+Design: <a href="http://html5up.net">HTML5 UP</a></p>
 
+			</div>
+
+    <!-- Scripts -->
+      <script src="jquery.min.js"></script>
+      <script src="jquery.scrolly.min.js"></script>
+      <script src="jquery.scrollex.min.js"></script>
+      <script src="browser.min.js"></script>
+      <script src="breakpoints.min.js"></script>
+      <script src="util.js"></script>
+      <script src="main.js"></script>
+
+  </body>
 </html>
-
