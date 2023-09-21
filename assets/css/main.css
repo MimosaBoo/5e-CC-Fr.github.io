@@ -2770,3 +2770,24 @@ p > em {
  .loooong {
   overflow-x: auto;
 }
+
+
+
+
+
+
+
+
+.container3 {
+
+  column-count: 3;
+  column-fill: balance;
+}
+
+
+.child3 {
+  display: inline-block;/* avoid to break through columns */
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+}
