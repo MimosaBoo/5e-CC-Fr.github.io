@@ -2798,7 +2798,7 @@ p > em {
 .dialogue {
 	border-width: 12px;
 	border-style: solid;
-	border-image: url (assets/libere128.png) 45;
+	border-image: url (/assets/libere128.png) 45;
 	padding-bottom: 1px !important;
 	padding-top: 1px !important;
 	margin-bottom: 8px !important;
