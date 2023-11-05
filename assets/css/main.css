@@ -2791,3 +2791,56 @@ p > em {
   margin: 10px auto;
   text-align: left;
 }
+
+
+
+
+.dialogue {
+	border-width: 12px;
+	border-style: solid;
+	border-image: url(/home/valentin/Bureau/d-et-d-5.1/site/prologue/v12/html5up-prologue-base/images/libere128.png) 45;
+	 
+	padding-bottom: 1px !important;
+	padding-top: 1px !important;
+	margin-bottom: 8px !important;
+	font-family: Avantgarde, Times New Roman, 'Source Sans Pro', sans-serif;
+	font-size: 110% !important;
+	color: darkred; 
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: 15px;
+		}
+
+
+
+
+.moi {font-family: Avantgarde, Times New Roman, 'Source Sans Pro', sans-serif !important;
+	font-size: 110% !important;
+	color: darkred;}
+
+.moi > a {font-family: Avantgarde, Times New Roman, 'Source Sans Pro', sans-serif !important;
+	color: darkred;}
+
+.dr {color: darkred;
+	font-weight: bold;}
+
+.mini{
+font-size: 80% !important;
+font-style: oblique;
+color: darkred;
+text-align: center;}
+ 
+
+.complement {
+	padding-left: 55px;
+	padding-right: 35px;}
+
+
+#main > section.hebe {
+	background-color: #dbdbdb;
+	padding: 1em !important;}
+
+
+.lien {
+	font-family: Avantgarde, Times New Roman, 'Source Sans Pro', sans-serif !important;
+	color: black;}
