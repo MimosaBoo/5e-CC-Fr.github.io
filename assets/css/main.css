@@ -2799,6 +2799,9 @@ p > em {
 	border-width: 12px;
 	border-style: solid;
 	border-image: url ('https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/blob/main/assets/libere128.png') 45;
+	border-image: url (https://github.com/5e-CC-Fr/5e-CC-Fr.github.io/blob/main/assets/libere128.png) 45;
+	border-image: url (/main/assets/libere128.png) 45;
+	
 	padding-bottom: 1px !important;
 	padding-bottom: 1px !important;
 	padding-top: 1px !important;
