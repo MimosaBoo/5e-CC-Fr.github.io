@@ -2849,3 +2849,7 @@ text-align: center;}
 
 .monster th {
 	 padding: 0 !important;}
+ 
+.monster td{
+	background-color: white;
+	padding-top: 0;}
