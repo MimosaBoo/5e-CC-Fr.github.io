@@ -2848,7 +2848,8 @@ text-align: center;}
 	color: black;}
 
 .monster th {
-	 padding: 0 !important;}
+	 padding: 0 !important;
+	text-align: center;}
  
 .monster td{
 	background-color: white;
