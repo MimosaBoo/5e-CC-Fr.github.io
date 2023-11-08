@@ -2779,9 +2779,9 @@ p > em {
 
 
 .container3 {
-
-  column-count: 3;
-  column-fill: balance;
+	column-count: 3;
+	column-fill: balance;
+	text-align: left;
 }
 
 
